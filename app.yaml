@@ -1,0 +1,5 @@
+runtime: python37
+# entrypoint: ansible-playbook ./ansible/main.yml -i ./ansible/inventory
+# entrypoint: gunicorn -b :$PORT StackOverflowBot:app
+entrypoint: ansible-playbook ansible/main.yml -i ansible/inventory
+

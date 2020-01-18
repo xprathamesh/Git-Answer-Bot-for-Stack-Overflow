@@ -1,0 +1,7 @@
+[local]
+localhost              ansible_connection=local
+
+[gcp]
+gitbot      ansible_host=34.73.120.194
+
+[heroku]

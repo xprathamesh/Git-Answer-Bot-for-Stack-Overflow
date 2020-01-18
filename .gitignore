@@ -1,0 +1,22 @@
+## Credentials.py should contain a dictionary containing your credentials 
+
+## Login data format 
+# 
+# login = {
+#     'user'  : 'uname'
+#     'pwd'   : 'pwd'
+# }
+#
+
+## Secret info data format
+# secret = {
+#     'AccessToken'  : 'User Access token',
+#     'key' : 'StackExchange API AppKey'
+# }
+
+Credentials.py
+extractor.py
+d6f7613cb2ff.json
+__pycache__
+.idea
+.vscode

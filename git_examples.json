@@ -1,0 +1,333 @@
+[
+	{
+		"id" : 0,
+		"command" : "git-config",
+		"title" : "The git config command is a convenience function that is used to set Git configuration values on a global or local project level.",
+		"description" : "These configuration levels correspond to .gitconfig text files. Executing git config will modify a configuration text file. ",
+		"example_heading" : "Below are examples of usage of git config command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "The most basic use case for git config is to invoke it with a configuration name, which will display the set value at that name.",
+				"eg_command" : "```git config user.email```\n\n",
+				"eg_description" : "In this example, email is a child property of the user configuration block. This will return the configured email address, if any, that Git will associate with locally created commits."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Writing a value:",
+				"eg_command" : "```git config --global user.email \"your_email@example.com\"```\n\n",
+				"eg_description" : "This example writes the value your_email@example.com to the configuration name user.email. It uses the --global flag so this value is set for the current operating system user."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config"
+	},
+	{
+		"id" : 1,
+		"command" : "git-init",
+		"title" : "The git init command creates a new Git repository.",
+		"description" : "It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. ",
+		"example_heading" : "Below are examples of usage of git init command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "The git init command is an incredibly easy way to create new version-controlled projects. All you have to do is cd into your project subdirectory and run git init, and you'll have a fully functional Git repository.",
+				"eg_command" : "```git init```\n\n",
+				"eg_description" : "Transform the current directory into a Git repository. This adds a .git subdirectory to the current directory and makes it possible to start recording revisions of the project."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Create an empty Git repository in the specified directory:",
+				"eg_command" : "```git init <directory>```\n\n",
+				"eg_description" : "Running this command will create a new subdirectory called containing nothing but the .git subdirectory."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init"
+	},
+	{
+		"id" : 2,
+		"command" : "git-clone",
+		"title" : "git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository.",
+		"description" : "git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location. The original repository can be located on the local filesystem or on remote machine accessible supported protocols.",
+		"example_heading" : "Below are examples of usage of git clone command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Obtain a local copy of a central repository:",
+				"eg_command" : "```git clone ssh://john@example.com/path/to/my-project.git \ncd my-project\n# Start working on the project```\n\n",
+				"eg_description" : "The example below demonstrates how to obtain a local copy of a central repository stored on a server accessible at example.com using the SSH username john:"
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Cloning to a specific folder:",
+				"eg_command" : "```git clone <repo> <directory>```\n\n",
+				"eg_description" : "Clone the repository located at <repo> into the folder called ~<directory>! on the local machine."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone"
+	},
+	{
+		"id" : 3,
+		"command" : "git-add",
+		"title" : "The git add command adds a change in the working directory to the staging area.",
+		"description" : "It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.",
+		"example_heading" : "Below are examples of usage of git add command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Staging of files:",
+				"eg_command" : "```git add <file>```\n\n",
+				"eg_description" : "Stage all changes in <file> for the next commit."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Staging chunks of file data using an interactive session: ",
+				"eg_command" : "```git add -p```\n\n",
+				"eg_description" : "Begin an interactive staging session that lets you choose portions of a file to add to the next commit. Use y to stage the chunk, n to ignore the chunk, s to split it into smaller chunks, e to manually edit the chunk, and q to exit."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/saving-changes"
+	},
+	{
+		"id" : 4,
+		"command" : "git-commit",
+		"title" : "The git commit command captures a snapshot of the project's currently staged changes.",
+		"description" : "Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.",
+		"example_heading" : "Below are examples of usage of git commit command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Staging of files:",
+				"eg_command" : "```git commit -m \"commit message\"```\n\n",
+				"eg_description" : "A shortcut command that immediately creates a commit with a passed commit message. Passing the -m option will forgo the text editor prompt in-favor of an inline message."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Update or amend a commit: ",
+				"eg_command" : "```git add hello.py\ngit commit --amend```\n\n",
+				"eg_description" : "This will once again, open up the configured text editor. This time, however, it will be pre-filled with the commit message we previously entered. This indicates that we are not creating a new commit, but editing the last."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/saving-changes/git-commit"
+	},
+	{
+		"id" : 7,
+		"command" : "git-status",
+		"title" : "The git status command displays the state of the working directory and the staging area.",
+		"description" : "It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git. The git status command is a relatively straightforward command. It simply shows you what's been going on with git add and git commit. Status messages also include relevant instructions for staging/unstaging files.",
+		"example_heading" : "Sample output showing the three main categories of a git status call is included below:",
+		"code" : "```# On branch master\n# Changes to be committed:\n# (use 'git reset HEAD <file>...' to unstage)\n#\n#modified: hello.py\n#\n# Changes not staged for commit:\n# (use 'git add <file>...' to update what will be committed)\n# (use 'git checkout -- <file>...' to discard changes in working directory)#\n#modified: main.py\n#\n# Untracked files:\n# (use 'git add <file>...' to include in what will be committed)\n#\n#hello.pyc\n```",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "This example displays the repository status before and after staging and committing a snapshot:",
+				"eg_command" : "git status",
+				"eg_description" : "```\ngit status\n# hello.py is listed under 'Changes not staged for commit'\ngit add hello.py\ngit status\n# hello.py is listed under 'Changes to be committed'\ngit commit\ngit status\n# nothing to commit (working directory clean)\n```"
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/inspecting-a-repository"
+	},
+	{
+		"id" : 8,
+		"command" : "git-push",
+		"title" : "The git push command is used to publish new local commits on a remote server.",
+		"description" : "This command is used to transfer or push the commit, which is made on a local branch in your computer to a remote repository like GitHub.",
+		"example_heading" : "Below are examples of usage of git push command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Pushing a specific branch to remote:",
+				"eg_command" : "```git push origin master```\n\n",
+				"eg_description" : "The above command pushes the master branch to the remote repository (origin). You may change the branch name and remote repository name."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Push all branches at once: ",
+				"eg_command" : "```git push origin --all```\n\n",
+				"eg_description" : "This command will push all the local branches to the remote repository."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/syncing/git-push"
+	},
+	{
+		"id" : 9,
+		"command" : "git-branch",
+		"title" : "The git branch command lets you create, list, rename, and delete branches.",
+		"description" : "This command diverges the mainline to work seperately without affecting the mainline. A branch represents an independent line of development.",
+		"example_heading" : "Below are examples of usage of git branch command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Create a new branch:",
+				"eg_command" : "```git branch new_branch_name```\n\n",
+				"eg_description" : "The above command creates a new branch. This command does not move the HEAD to the newly created branch."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Delete a branch: ",
+				"eg_command" : "```git branch -d branch_name```\n\n",
+				"eg_description" : "The git branch command when used with the -d option deletes the specified branch. Git won't allow you to delete a branch if unmerged changes are present."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/using-branches"
+	},
+	{
+		"id" : 10,
+		"command" : "git-diff",
+		"title" : "The git diff command displays the changes that you have made after your last commit",
+		"description" : "This command compares two files, mostly the same file, but in different versions to understand the differences between the current state of the file in the repository compared to their last known state.",
+		"example_heading" : "Below are examples of usage of git diff command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Compare the working directory with local repository:",
+				"eg_command" : "```git diff HEAD file_name```\n\n",
+				"eg_description" : "The above command compares the changes made to the file with respect to the current state of the local repository. When you say HEAD in your Git command, it refers the local repo."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Compare files between two different commits: ",
+				"eg_command" : "```git diff commit1_Id commit2_Id```\n\n",
+				"eg_description" : "This command displays the changes in the files with respect to two commits. The commit Id can be found using the git log command."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/saving-changes/git-diff"
+	},
+	{
+		"id" : 11,
+		"command" : "git-merge",
+		"title" : "The git merge command is used to merge the specified branch into the currently active branch.",
+		"description" : "Merging takes the contents of a source branch and integrates them with a target branch. In this process, only the target branch is changed. The source branch history remains the same.",
+		"example_heading" : "Below are examples of usage of git merge command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Merge feature branch to master branch:",
+				"eg_command" : "```git merge feature_branch_name```\n\n",
+				"eg_description" : "The above command integrates the contents of the feature branch to the master branch. Make sure you checkout the master branch first."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Merge master branch to feature_branch: ",
+				"eg_command" : "```git merge master```\n\n",
+				"eg_description" : "This command merges the master branch to the feature_branch. Before executing this command, git checkout the feature_branch."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/using-branches/git-merge"
+	},
+	{
+		"id" : 12,
+		"command" : "git-checkout",
+		"title" : "The git checkout command switches between branches or restores working tree files.",
+		"description" : "The git checkout is a navigator command that helps to switch branches. It Updates files in the working tree to match the version in the index or the specified tree.",
+		"example_heading" : "Below are examples of usage of git checkout command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Checkout a specific branch:",
+				"eg_command" : "```git checkout branch_name```\n\n",
+				"eg_description" : "The above command will switch the branch from the current branch to the specified branch name. Git won't allow you to switch branches if there are any uncommitted changes."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Create and checkout a new branch:",
+				"eg_command" : "```git checkout -b new_branch_name```\n\n",
+				"eg_description" : "The -b option in this command creates the new branch and checks it out simultaneously. This will automatically switch you to the new branch."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/using-branches/git-checkout"
+	},
+	{
+		"id" : 13,
+		"command" : "git-pull",
+		"title" : "The git pull command is used to update the local version of a repository from a remote.",
+		"description" : "This command is used to update your current HEAD branch with the latest changes from the remote server. It not only downloads new data; it also directly integrates it into your current working copy files.",
+		"example_heading" : "Below are examples of usage of git pull command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Pull contents from master branch:",
+				"eg_command" : "```git pull origin master```\n\n",
+				"eg_description" : "The above command will fetch the specified remote’s copy of the master branch and immediately merge it into the local copy."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "Pull with default option:",
+				"eg_command" : "```git pull```\n\n",
+				"eg_description" : "In most cases your local branch will already have a proper tracking connection with a remote branch set up. This configuration provides default values so that the pull command already knows where to pull from without any additional options."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/syncing/git-pull"
+	},
+	{
+		"id" : 14,
+		"command" : "git-log",
+		"title" : "The git log command is used to view the commits.",
+		"description" : "This command allows you to view information about previous commits that have occurred in a project. These commits are shown in reverse chronological order (the most recent commits first).",
+		"example_heading" : "Below are examples of usage of git log command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Display all commits:",
+				"eg_command" : "```git log --all```\n\n",
+				"eg_description" : "The above command will display all the commits regardless of the branch checked out by using the –all option."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "View n most recent commits:",
+				"eg_command" : "```git log -3```\n\n",
+				"eg_description" : "The above command will display the 3 most recent commits."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/git-log"
+	},
+	{
+		"id" : 15,
+		"command" : "git-reset",
+		"title" : "The git reset command is used to return the entire working tree to the last committed state.",
+		"description" : "The git reset command allows you to RESET your current head to a specified state. This command will discard commits in a private branch or throw away uncommitted changes.",
+		"example_heading" : "Below are examples of usage of git reset command:",
+		"code" : "",
+		"example" : 
+		[
+			{
+				"id" : "0",
+				"eg_title" : "Hard Reset:",
+				"eg_command" : "```git reset --hard```\n\n",
+				"eg_description" : "The above command will do a hard reset against your current HEAD, it will erase all changes in your working tree, so that your current files match the contents of HEAD."
+			},
+			{
+				"id" : "1",
+				"eg_title" : "View n most recent commits:",
+				"eg_command" : "```git reset --soft```\n\n",
+				"eg_description" : "This command resets HEAD to another commit, so index and the working directory will not be altered in any way. All of the files changed between the original HEAD and the commit will be staged."
+			}
+		],
+		"link" : "https://www.atlassian.com/git/tutorials/undoing-changes/git-reset"
+	}
+
+]

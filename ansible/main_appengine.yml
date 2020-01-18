@@ -1,0 +1,4 @@
+- hosts: local
+  tasks:
+    name: Initialize and run app
+    command: python -m forever.run -t 120 -i 120 StackOverflowBot.py

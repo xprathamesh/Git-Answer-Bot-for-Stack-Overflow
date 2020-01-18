@@ -1,0 +1,1583 @@
+{
+  "items": [
+    {
+      "tags": [
+        "selenium"
+      ],
+      "owner": {
+        "reputation": 40,
+        "user_id": 4,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/0f349610a2d8cf79f9225b982047d648?s=128&d=identicon&r=PG",
+        "display_name": "Rohil Shah",
+        "link": "https://stackoverflow.com/c/ncsu/users/4/rohil-shah"
+      },
+      "is_answered": false,
+      "view_count": 120,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517341096,
+      "creation_date": 1517341096,
+      "question_id": 41,
+      "link": "https://stackoverflow.com/c/ncsu/questions/41/error-starting-chrome-for-selenium-testing",
+      "title": "Error starting chrome for Selenium Testing",
+      "body": "<p>I am running <code>sudo mvn test</code>to run the selenium script.</p>\n\n<p>Chrome fails to start  </p>\n\n<pre><code>T E S T S\n-------------------------------------------------------\nRunning selenium.tests.WebTest\n[2018-01-30 19:28:07:794] [main] INFO BrowserManager - Reading http://chromedriver.storage.googleapis.com/ to seek chromedriver\n[2018-01-30 19:28:08:680] [main] INFO BrowserManager - Latest version of chromedriver is 2.35\n[2018-01-30 19:28:08:831] [main] DEBUG Downloader - Using binary driver previously downloaded /root/.m2/repository/webdriver/chromedriver/linux64/2.35/chromedriver\n[2018-01-30 19:28:08:833] [main] INFO BrowserManager - Exporting webdriver.chrome.driver as /root/.m2/repository/webdriver/chromedriver/linux64/2.35/chromedriver\nStarting ChromeDriver 2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881) on port 13841\nOnly local connections are allowed.\nTests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 65.012 sec &lt;&lt;&lt; FAILURE!\n\nTests in error:                                                                                                         \n  selenium.tests.WebTest: unknown error: Chrome failed to start: exited abnormally(..)                                  \n  selenium.tests.WebTest                                                                                                \n\nTests run: 2, Failures: 0, Errors: 2, Skipped: 0                                                                        \n\n[INFO] ------------------------------------------------------------------------                                         \n[INFO] BUILD FAILURE                                                                                                    \n[INFO] ------------------------------------------------------------------------                                         \n[INFO] Total time: 01:13 min                                                                                            \n[INFO] Finished at: 2018-01-30T19:29:12+00:00                                                                           \n[INFO] Final Memory: 18M/43M                                                                                            \n[INFO] ------------------------------------------------------------------------                                         \n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project Sele\nnium: There are test failures.                                                                                          \n[ERROR]                                                                                                                 \n[ERROR] Please refer to /home/vagrant/code/Onboarding-Selenium/src/target/surefire-reports for the individual test resul\nts.                  \n</code></pre>\n\n<p>Installed chrome using ansible like this: </p>\n\n<pre><code> - name: Google google\n      apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb\n      become: yes\n</code></pre>\n\n<p>Does anyone know how to fix this?                                                                   </p>\n"
+    },
+    {
+      "tags": [
+        "vagrant",
+        "ssh",
+        "portforwarding",
+        "environment"
+      ],
+      "owner": {
+        "reputation": 96,
+        "user_id": 5,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/e7d7041aa5a3c8705876dd666b25fc99?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Anshuman Goel",
+        "link": "https://stackoverflow.com/c/ncsu/users/5/anshuman-goel"
+      },
+      "is_answered": false,
+      "view_count": 116,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1517375093,
+      "creation_date": 1517357826,
+      "last_edit_date": 1517375093,
+      "question_id": 43,
+      "link": "https://stackoverflow.com/c/ncsu/questions/43/port-fowarding-to-run-mvn-test",
+      "title": "Port Fowarding to run mvn test",
+      "body": "<p>As per my understanding to run mvn test on Onboarding Selenium VM successfully, I need to do port forwarding. However, doing ssh will require the key for CoffeeMaker server on Onboarding Selenium VM.</p>\n\n<p>The alternate is by modifying code to use environment variable. Does it mean like setting up an environment variable with IP Address of the server and using it in java code ?</p>\n\n<p>Please let me know if my understanding is correct or not.</p>\n"
+    },
+    {
+      "tags": [
+        "ansible",
+        "vagrant",
+        "ssh",
+        "portforwarding"
+      ],
+      "owner": {
+        "reputation": 96,
+        "user_id": 5,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/e7d7041aa5a3c8705876dd666b25fc99?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Anshuman Goel",
+        "link": "https://stackoverflow.com/c/ncsu/users/5/anshuman-goel"
+      },
+      "is_answered": false,
+      "view_count": 48,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517547394,
+      "creation_date": 1517547394,
+      "question_id": 64,
+      "link": "https://stackoverflow.com/c/ncsu/questions/64/port-forwarding-using-ansible",
+      "title": "Port Forwarding using Ansible",
+      "body": "<p>Using ssh command in ansible for port forwarding get struck always for forever as soon as it executes ssh task (with all required parameters like -L -f -i and -N). Any insight how to overcome this problem will be very helpful.</p>\n\n<p>PS: Tried using shell and command but no progress. Or is it even necessary to do it with ansible or there is some other way around to do it ?</p>\n"
+    },
+    {
+      "tags": [
+        "selenium"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Bhavik Patel"
+      },
+      "is_answered": false,
+      "view_count": 68,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517549464,
+      "creation_date": 1517549464,
+      "question_id": 65,
+      "link": "https://stackoverflow.com/c/ncsu/questions/65/issue-with-selenium-tests",
+      "title": "Issue With Selenium Tests",
+      "body": "<p>I am facing the same problem as in <a href=\"https://stackoverflow.com/c/ncsu/questions/52\">this question</a>. The difference here is I have started CoffeeMaker server on local for testing purpose. I have just added <code>options.addArguments( \"no-sandbox\");</code> this line in java file and have changed nothing as I am running server on localhost. However, I am getting the same error as asked in the question. For reference I am posting the error log as well.</p>\n\n<pre><code>Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 6.522 sec &lt;&lt;&lt; FAILURE!\nVerifyAddInventory(selenium.tests.WebTest)  Time elapsed: 0.252 sec  &lt;&lt;&lt; ERROR!\norg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@id='currentCoffee']\"}\n  (Session info: headless chrome=64.0.3282.140)\n  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 3.13.0-141-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'\nSystem info: host: 'vagrant-ubuntu-trusty-64', ip: '10.0.2.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-141-generic', java.version: '1.8.0_161'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528139 (47ead77cb35ad2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}\nSession ID: b189e9a896f4726c335c68d4b21cde1a\n*** Element info: {Using=xpath, value=//span[@id='currentCoffee']}\n        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n        at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n        at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n        at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n        at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n        at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n        at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n        at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\n        at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\n        at org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n        at selenium.tests.WebTest.VerifyAddInventory(WebTest.java:75)\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n        at java.lang.reflect.Method.invoke(Method.java:498)\n        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\n        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n        at java.lang.reflect.Method.invoke(Method.java:498)\n        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n\nNeverRunOutOfCoffee(selenium.tests.WebTest)  Time elapsed: 0.049 sec  &lt;&lt;&lt; ERROR!\norg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@id='currentCoffee']\"}\n  (Session info: headless chrome=64.0.3282.140)\n  (Driver info: chromedriver=2.35.528139 (47ead77cb35ad2a9a83248b292151462a66cd881),platform=Linux 3.13.0-141-generic x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'\nSystem info: host: 'vagrant-ubuntu-trusty-64', ip: '10.0.2.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-141-generic', java.version: '1.8.0_161'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528139 (47ead77cb35ad2..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}\nSession ID: b189e9a896f4726c335c68d4b21cde1a\n*** Element info: {Using=xpath, value=//span[@id='currentCoffee']}\n        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n        at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n        at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n        at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n        at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\n        at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\n        at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n        at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n        at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\n        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\n        at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\n        at org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n        at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\n        at selenium.tests.WebTest.NeverRunOutOfCoffee(WebTest.java:63)\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n        at java.lang.reflect.Method.invoke(Method.java:498)\n        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)\n        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)\n        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)\n        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n        at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\n        at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\n        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\n        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\n        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n        at java.lang.reflect.Method.invoke(Method.java:498)\n        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\n        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\n        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\n        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\n        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\n\n\nResults :\n\nTests in error:\n  VerifyAddInventory(selenium.tests.WebTest): no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@id='currentCoffee']\"}(..)\n  NeverRunOutOfCoffee(selenium.tests.WebTest): no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[@id='currentCoffee']\"}(..)\n\nTests run: 3, Failures: 0, Errors: 2, Skipped: 0\n</code></pre>\n\n<p>I understand that we need to do port forwarding to actual CoffeeMaker server in our actual scenario, but I just wanted to confirm my installation and other things are in place properly before writing script of port forwarding.</p>\n\n<p>Any help is appreciated. Thanks.</p>\n"
+    },
+    {
+      "tags": [
+        "maven",
+        "spring-boot"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 51,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-moZt0AWeLO0/AAAAAAAAAAI/AAAAAAAAAAs/hI4RHb0sNqM/photo.jpg?sz=128",
+        "display_name": "Pavithra Iyer",
+        "link": "https://stackoverflow.com/c/ncsu/users/51/pavithra-iyer"
+      },
+      "is_answered": false,
+      "view_count": 49,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517580697,
+      "creation_date": 1517580697,
+      "question_id": 68,
+      "link": "https://stackoverflow.com/c/ncsu/questions/68/coffeemaker-application-shuts-down-immediately",
+      "title": "CoffeeMaker application shuts down immediately",
+      "body": "<p>mvn spring-boot:run command is supposed to run until we kill the application. But it keeps shutting down immediately. I did see the CoffeeMaker application in browser at one run. So I am not sure what is going wrong. Am I missing something?</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/575fa629-de44-4e92-a88d-fec7b2d547db.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/575fa629-de44-4e92-a88d-fec7b2d547db.png\" alt=\"enter image description here\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "ansible",
+        "java"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Pushpendra Singh Patel"
+      },
+      "is_answered": false,
+      "view_count": 58,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517583157,
+      "creation_date": 1517583157,
+      "question_id": 69,
+      "link": "https://stackoverflow.com/c/ncsu/questions/69/error-when-installing-java",
+      "title": "Error when installing java",
+      "body": "<p>When i'm trying to install java 8 using</p>\n\n<p><code>apt_repository: repo='ppa:webupd8team/java'</code></p>\n\n<p>I'm getting the following error again and again. I've tried to solve it by using become: yes but it is still giving it.</p>\n\n<pre><code>FAILED! =&gt; {\"changed\": false, \"cmd\": \"apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 7B2C3B0889BF5709A105D03AC2518248EEA14886\", \"msg\": \"gpg: requesting key EEA14886 from\n hkp server keyserver.ubuntu.com\\ngpg: no valid OpenPGP data found.\\ngpg: Total number processed: 0\", \"rc\": 2, \"stderr\": \"gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com\\ngpg: no valid OpenPGP\ndata found.\\ngpg: Total number processed: 0\\n\", \"stderr_lines\": [\"gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com\", \"gpg: no valid OpenPGP data found.\", \"gpg: Total number processed: 0\"], \"stdo\nut\": \"Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.ao0UOtiJMa --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/\ntrusted.gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 7B2C3B0889BF5709A105D03AC2518248EEA14886\\ngpgkeys: key 7B2C3B0889BF5709A105D03AC2518248EEA14886 can't be retrieved\\n\", \"stdout_lines\": [\"Executin\ng: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.ao0UOtiJMa --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --\nrecv-keys --keyserver hkp://keyserver.ubuntu.com:80 7B2C3B0889BF5709A105D03AC2518248EEA14886\", \"gpgkeys: key 7B2C3B0889BF5709A105D03AC2518248EEA14886 can't be retrieved\"]}\nfatal: [192.168.33.3]: FAILED! =&gt; {\"changed\": false, \"cmd\": \"apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 7B2C3B0889BF5709A105D03AC2518248EEA14886\", \"msg\": \"gpg: requesting key EEA14886 from\n hkp server keyserver.ubuntu.com\\ngpg: no valid OpenPGP data found.\\ngpg: Total number processed: 0\", \"rc\": 2, \"stderr\": \"gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com\\ngpg: no valid OpenPGP\ndata found.\\ngpg: Total number processed: 0\\n\", \"stderr_lines\": [\"gpg: requesting key EEA14886 from hkp server keyserver.ubuntu.com\", \"gpg: no valid OpenPGP data found.\", \"gpg: Total number processed: 0\"], \"stdo\nut\": \"Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.arqckDZLqV --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/\ntrusted.gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 7B2C3B0889BF5709A105D03AC2518248EEA14886\\ngpgkeys: key 7B2C3B0889BF5709A105D03AC2518248EEA14886 can't be retrieved\\n\", \"stdout_lines\": [\"Executin\ng: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.arqckDZLqV --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --\nrecv-keys --keyserver hkp://keyserver.ubuntu.com:80 7B2C3B0889BF5709A105D03AC2518248EEA14886\", \"gpgkeys: key 7B2C3B0889BF5709A105D03AC2518248EEA14886 can't be retrieved\"]}\n</code></pre>\n"
+    },
+    {
+      "tags": [
+        "selenium-chromedriver",
+        "mvn"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Sambhav Jain"
+      },
+      "is_answered": false,
+      "view_count": 89,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517589552,
+      "creation_date": 1517589552,
+      "question_id": 70,
+      "link": "https://stackoverflow.com/c/ncsu/questions/70/problem-in-mvn-test-chrome-driver-issue",
+      "title": "Problem in mvn test, chrome driver issue",
+      "body": "<p>Can anyone help out with the following issue? I am getting the following issue after sudo mvn test command. I have java8, google-chrome version 64, and maven 3.3.9 installed.</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/46f8e5ee-1fcb-4ec7-90d8-ed15f6087622.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/46f8e5ee-1fcb-4ec7-90d8-ed15f6087622.png\" alt=\"Error Screenshot\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "digital-ocean"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Karan Jadhav"
+      },
+      "is_answered": false,
+      "view_count": 230,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1517965259,
+      "creation_date": 1517965259,
+      "question_id": 78,
+      "link": "https://stackoverflow.com/c/ncsu/questions/78/homework-1-part-2-application-type",
+      "title": "Homework 1 part 2 - application type",
+      "body": "<p>The code that we have to write for creating a droplet and displaying its IP, does it need to be a web application like CoffeeMaker? Something that is started and running at the end of the playbook?\nOr can it be a simple script that needs to be run every time?</p>\n"
+    },
+    {
+      "tags": [
+        "maven"
+      ],
+      "owner": {
+        "reputation": 123,
+        "user_id": 46,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/9wQfm.jpg?s=128&g=1",
+        "display_name": "Prerit Bhandari",
+        "link": "https://stackoverflow.com/c/ncsu/users/46/prerit-bhandari"
+      },
+      "is_answered": false,
+      "view_count": 48,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1518133942,
+      "creation_date": 1518126086,
+      "last_edit_date": 1518133942,
+      "question_id": 81,
+      "link": "https://stackoverflow.com/c/ncsu/questions/81/error-while-instantiating-hello-world-maven-project",
+      "title": "Error while instantiating hello world maven project",
+      "body": "<p>In MiniMaven Workshop, after installing Maven and Java on my local machine (Mac OS). I keep getting the Build Failure with this error, after running this command: </p>\n\n<pre><code>mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=altcode -DartifactId=devi\n</code></pre>\n\n<p>Error:</p>\n\n<pre><code>[ERROR] No plugin found for prefix 'archetype' in the current project and in the plugin groups [org.apache.maven.plugins, org.codehaus.mojo] available from the repositories [local (/Users/preritbhandari/.m2/repository), central (https://repo.maven.apache.org/maven2)]\n</code></pre>\n\n<p>There are few warnings also:</p>\n\n<pre><code>[INFO] Scanning for projects...\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-clean-plugin:2.5: Plugin org.apache.maven.plugins:maven-clean-plugin:2.5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-clean-plugin:jar:2.5\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-install-plugin:2.4: Plugin org.apache.maven.plugins:maven-install-plugin:2.4 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-install-plugin:jar:2.4\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-deploy-plugin:2.7: Plugin org.apache.maven.plugins:maven-deploy-plugin:2.7 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-deploy-plugin:jar:2.7\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-site-plugin:3.3: Plugin org.apache.maven.plugins:maven-site-plugin:3.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-site-plugin:jar:3.3\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-antrun-plugin:1.3: Plugin org.apache.maven.plugins:maven-antrun-plugin:1.3 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-antrun-plugin:jar:1.3\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-assembly-plugin:2.2-beta-5: Plugin org.apache.maven.plugins:maven-assembly-plugin:2.2-beta-5 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-assembly-plugin:jar:2.2-beta-5\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/2.8/maven-dependency-plugin-2.8.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-dependency-plugin:2.8: Plugin org.apache.maven.plugins:maven-dependency-plugin:2.8 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-dependency-plugin:jar:2.8\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/2.3.2/maven-release-plugin-2.3.2.pom\n[WARNING] Failed to retrieve plugin descriptor for org.apache.maven.plugins:maven-release-plugin:2.3.2: Plugin org.apache.maven.plugins:maven-release-plugin:2.3.2 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-release-plugin:jar:2.3.2\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml\n[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml\n[WARNING] Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)\n[WARNING] Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)\n[WARNING] Failure to transfer org.apache.maven.plugins/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.apache.maven.plugins/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)\n[WARNING] Failure to transfer org.codehaus.mojo/maven-metadata.xml from https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer metadata org.codehaus.mojo/maven-metadata.xml from/to central (https://repo.maven.apache.org/maven2): Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)\n</code></pre>\n\n<p>Am I missing something?</p>\n"
+    },
+    {
+      "tags": [
+        "hw1",
+        "requirements"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Seth B"
+      },
+      "is_answered": false,
+      "view_count": 115,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1518144987,
+      "creation_date": 1518144987,
+      "question_id": 82,
+      "link": "https://stackoverflow.com/c/ncsu/questions/82/hw1-part-2-requirements",
+      "title": "HW1 - Part 2 requirements",
+      "body": "<p>Just to verify, in this assignment we will be doing the same as in part 1 besides using a cloud host rather than a local vm? That is: besides the API provisioning of the cloud servers, we are still using ansible to run a web app and selenium tests?</p>\n"
+    },
+    {
+      "tags": [
+        "node.js",
+        "aws"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 73,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/eecfe158fcfa7e91ae77b7525453143f?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Kanchan Bisht",
+        "link": "https://stackoverflow.com/c/ncsu/users/73/kanchan-bisht"
+      },
+      "is_answered": false,
+      "view_count": 54,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1518558898,
+      "creation_date": 1518558780,
+      "last_edit_date": 1518558898,
+      "question_id": 102,
+      "link": "https://stackoverflow.com/c/ncsu/questions/102/error-on-running-node-js-file-for-creating-an-instance-of-aws-server",
+      "title": "Error on running node.js file for creating an instance of aws server",
+      "body": "<p>It would be great if I can get some help regarding this. Thank you.</p>\n\n<pre><code>C:\\Users\\admin\\Desktop\\HW1_Part2&gt;node describe_ec2_instance.js\nError TypeError: Key must be a buffer\n    at TypeError (native)\n    at new Hmac (crypto.js:91:16)\n    at Object.Hmac (crypto.js:89:12)\n    at Object.hmac (C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-sdk\\lib\\ut\nil.js:401:30)\n    at Object.getSigningKey (C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-s\ndk\\lib\\signers\\v4_credentials.js:59:8)\n    at V4.signature (C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-sdk\\lib\\s\nigners\\v4.js:97:36)\n    at V4.authorization (C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-sdk\\l\nib\\signers\\v4.js:92:36)\n    at V4.addAuthorization (C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-sd\nk\\lib\\signers\\v4.js:34:12)\n    at C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-sdk\\lib\\event_listeners\n.js:215:18\n    at finish (C:\\Users\\admin\\Desktop\\HW1_Part2\\node_modules\\aws-sdk\\lib\\config.\njs:320:7)\n</code></pre>\n"
+    },
+    {
+      "tags": [
+        "checkbox.io",
+        "build-milestone"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 17,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-tz8kAIOl-tM/AAAAAAAAAAI/AAAAAAAAAAc/E_20SB8ezTE/photo.jpg?sz=128",
+        "display_name": "Rezvan Mahdavi Hezaveh",
+        "link": "https://stackoverflow.com/c/ncsu/users/17/rezvan-mahdavi-hezaveh"
+      },
+      "is_answered": false,
+      "view_count": 132,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1518889085,
+      "creation_date": 1518889085,
+      "question_id": 107,
+      "link": "https://stackoverflow.com/c/ncsu/questions/107/running-checkbox-io",
+      "title": "Running checkbox.io",
+      "body": "<p>I've tried to run checkbox.io but I've got this in the browser:</p>\n\n<p><code>Cannot GET /</code></p>\n\n<p>I don't know what's the problem. I will appreciate any help.</p>\n"
+    },
+    {
+      "tags": [
+        "jenkins-2"
+      ],
+      "owner": {
+        "reputation": 96,
+        "user_id": 5,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/e7d7041aa5a3c8705876dd666b25fc99?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Anshuman Goel",
+        "link": "https://stackoverflow.com/c/ncsu/users/5/anshuman-goel"
+      },
+      "is_answered": false,
+      "view_count": 121,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1519083886,
+      "creation_date": 1518998894,
+      "last_edit_date": 1519083886,
+      "question_id": 112,
+      "link": "https://stackoverflow.com/c/ncsu/questions/112/not-able-to-use-jenkins-cli",
+      "title": "Not able to use Jenkins CLI",
+      "body": "<p>While using Jenkins CLI, I am receiving the following error:</p>\n\n<pre><code>java.io.IOException: No X-Jenkins-CLI2-Port among [X-Jenkins, null, Server, X-Content-Type-Options, X-You-Are-In-Group, X-Hudson, X-Permission-Implied-By, Date, X-Jenkins-Session, X-You-Are-Authenticated-As, X-Required-Permission, Set-Cookie, Expires, Content-Length, Content-Type]\",\n    \"\\tat hudson.cli.CLI.getCliTcpPort(CLI.java:284)\",\n    \"\\tat hudson.cli.CLI.&lt;init&gt;(CLI.java:128)\",\n    \"\\tat hudson.cli.CLIConnectionFactory.connect(CLIConnectionFactory.java:72)\",\n    \"\\tat hudson.cli.CLI._main(CLI.java:473)\",\n    \"\\tat hudson.cli.CLI.main(CLI.java:384)\",\n    \"\\tSuppressed: java.io.IOException: Server returned HTTP response code: 403 for URL: http://ec2-34-207-148-208.compute-1.amazonaws.com:8080/cli\",\n    \"\\t\\tat sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1894)\",\n    \"\\t\\tat sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)\",\n    \"\\t\\tat hudson.cli.FullDuplexHttpStream.&lt;init&gt;(FullDuplexHttpStream.java:78)\",\n    \"\\t\\tat hudson.cli.CLI.connectViaHttp(CLI.java:152)\",\n    \"\\t\\tat hudson.cli.CLI.&lt;init&gt;(CLI.java:132)\",\n    \"\\t\\t... 3 more\n</code></pre>\n\n<p>I am trying to use the method provided at <a href=\"https://github.com/sebastianbergmann/php-jenkins-template/issues/64\" rel=\"nofollow noreferrer\">this link</a> and <a href=\"https://stackoverflow.com/questions/37404184/java-io-ioexception-no-x-jenkins-cli2-port-jenkins-cli-not-working\">this</a>. The UI option works very well but not the programmatic one. Anyone who faced this issue and able to resolve please let me know.</p>\n"
+    },
+    {
+      "tags": [
+        "mysql",
+        "itrust2",
+        "sql",
+        "hibernate"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "khelan patel"
+      },
+      "is_answered": false,
+      "view_count": 67,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1519234276,
+      "creation_date": 1519234276,
+      "question_id": 123,
+      "link": "https://stackoverflow.com/c/ncsu/questions/123/itrust2-mysql-issues",
+      "title": "iTrust2 mysql issues",
+      "body": "<p>I'm facing below error while executing \"mvn process-test-classes\".</p>\n\n<blockquote>\n  <ul>\n  <li>[edu.ncsu.csc.itrust2.utils.HibernateDataGenerator.main()] DEBUG o.h.tool.hbm2ddl.SchemaExport - Import file not found: /import.sql</li>\n  <li>[edu.ncsu.csc.itrust2.utils.HibernateDataGenerator.main()] DEBUG org.hibernate.SQL - alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss\n  Hibernate: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss\n  alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss</li>\n  <li>[edu.ncsu.csc.itrust2.utils.HibernateDataGenerator.main()] ERROR o.h.tool.hbm2ddl.SchemaExport - HHH000389: Unsuccessful: alter table AppointmentRequests drop foreign key FKlpa5tri2ufo8t7bt7nusa1pss</li>\n  <li>[edu.ncsu.csc.itrust2.utils.HibernateDataGenerator.main()] ERROR o.h.tool.hbm2ddl.SchemaExport - Table 'itrust2.appointmentrequests' doesn't exist</li>\n  </ul>\n</blockquote>\n\n<p>Looks like import.sql file is not found. Am I missing setting up any parameter in mysql config file? or has anyone faced similar issue?</p>\n\n<p>Thanks!</p>\n"
+    },
+    {
+      "tags": [
+        "itrust2",
+        "jetty"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "khelan patel"
+      },
+      "is_answered": false,
+      "view_count": 59,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1519262213,
+      "creation_date": 1519262213,
+      "question_id": 127,
+      "link": "https://stackoverflow.com/c/ncsu/questions/127/itrust2-deployment-issue",
+      "title": "iTrust2 deployment issue",
+      "body": "<p>My jetty server is running fine with below message,</p>\n\n<p><code>- 2018-02-22 01:10:47.505:INFO:oejs.Server:main: Started @41755ms\n[INFO] Started Jetty Server\n[INFO] Starting scanner at interval of 10 seconds.\n</code></p>\n\n<p>However, when I go to browser and go to localhost:8080/iTrust2, it fails with below message on terminal and exits from jetty server,</p>\n\n<p><code>- DEBUG o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/\n - DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information</code></p>\n\n<p>has anyone faced similar issue?</p>\n\n<p>Thanks!</p>\n"
+    },
+    {
+      "tags": [
+        "itrust2",
+        "milestone1",
+        "build-failure",
+        "mojoexecutionexception"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 73,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/eecfe158fcfa7e91ae77b7525453143f?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Kanchan Bisht",
+        "link": "https://stackoverflow.com/c/ncsu/users/73/kanchan-bisht"
+      },
+      "is_answered": false,
+      "view_count": 83,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1519273611,
+      "creation_date": 1519273611,
+      "question_id": 131,
+      "link": "https://stackoverflow.com/c/ncsu/questions/131/build-failure-executing-mvn-clean-test-verify-checkstylecheckstyle-for-itrust",
+      "title": "Build failure executing mvn clean test verify checkstyle:checkstyle for iTrust. Any idea how to resolve this error?",
+      "body": "<p>\"[INFO] BUILD FAILURE\", \"[INFO] ---------------------------------------\n---------------------------------\", \"[INFO] Total time: 15.454 s\", \"[INFO] Finis\nhed at: 2018-02-22T03:56:13+00:00\", \"[INFO] Final Memory: 38M/92M\", \"[INFO] ----\n--------------------------------------------------------------------\", \"03:56:13\n.967 [Finalizer] INFO  org.hibernate.orm.connections - HHH10001008: Cleaning up\nconnection pool [jdbc:mysql://localhost:3306/iTrust2?createDatabaseIfNotExist=tr\nue]\", \"[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.4.0:\njava (GenerateTestData) on project iTrust2: An exception occured while executing\n the Java class. null: InvocationTargetException: Unable to create requested ser\nvice [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]: Error calling Driver#c\nonnect: Access denied for user 'root'@'localhost' -> [Help 1]\", \"[ERROR] \", \"[ER\nROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n\", \"[ERROR] Re-run Maven using the -X switch to enable full debug logging.\", \"[E\nRROR] \", \"[ERROR] For more information about the errors and possible solutions,\nplease read the following articles:\", \"[ERROR] [Help 1] <a href=\"http://cwiki.apache.org/\" rel=\"nofollow noreferrer\">http://cwiki.apache.org/</a>\nconfluence/display/MAVEN/MojoExecutionException\"]}</p>\n"
+    },
+    {
+      "tags": [
+        "mongodb"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Priyanka Jain"
+      },
+      "is_answered": false,
+      "view_count": 53,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1519352915,
+      "creation_date": 1519352915,
+      "question_id": 135,
+      "link": "https://stackoverflow.com/c/ncsu/questions/135/unable-to-create-mongodb-user",
+      "title": "Unable to create mongodb user",
+      "body": "<p>while creating the user for mongodb, I am getting error :</p>\n\n<p>File \"/usr/local/lib/python3.5/dist-packages/pymongo/topology.py\", line 199, in _select_servers_loop\n    self._error_message(selector))\npymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused</p>\n\n<pre><code>\"msg\": \"unable to connect to database: localhost:27017: [Errno 111] Connection refused\"\n</code></pre>\n\n<p>I am trying this on an EC2 instance. Can anyone tell me how to resolve this issue?</p>\n"
+    },
+    {
+      "tags": [
+        "ansible",
+        "jenkins-job-builder"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Karan Jadhav"
+      },
+      "is_answered": false,
+      "view_count": 63,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1519407162,
+      "creation_date": 1519407162,
+      "question_id": 140,
+      "link": "https://stackoverflow.com/c/ncsu/questions/140/jjb-update-jobs-jenkins-badhttpexception",
+      "title": "JJB update jobs : jenkins.BadHTTPException",
+      "body": "<p>When I run \"jenkins-jobs update jobs\" via ansible I get the mentioned error.\nThe same command runs successfully when executed on the jenkins server.\nI found a couple of posts mentioning to install python packages such as python-setuptools, python-lxml etc but those didn't work.</p>\n\n<p>One <a href=\"https://stackoverflow.com/questions/40253108/get-jenkins-badhttpexception-when-try-to-get-version-info-from-jenkins-run-on-do\">post</a> mentioned it being an issue with Security configuration and to disable it, but I'm not sure if that's a good solution.</p>\n\n<p>Any help is appreciated.</p>\n"
+    },
+    {
+      "tags": [
+        "checkbox.io",
+        "checkbox",
+        "nginx"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Pushpendra Singh Patel"
+      },
+      "is_answered": false,
+      "view_count": 42,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1519415694,
+      "creation_date": 1519415694,
+      "question_id": 141,
+      "link": "https://stackoverflow.com/c/ncsu/questions/141/nginx-500-internal-server-error",
+      "title": "nginx 500 internal server error",
+      "body": "<p>When running checkbox.io, on the browser we are getting Nginx 500 Internal Server Error. On looking up the <code>/var/log/nginx/error.log</code>, it displayed the error:</p>\n\n<pre><code>2018/02/23 19:24:21 [notice] 4668#4668: signal process started\n2018/02/23 19:25:39 [error] 4671#4671: *1 rewrite or internal redirection cycle while internally redirecting to \"/index.html\", client: 107.13.172.206, server: , request: \"GET / HTTP/1.1\", host: \"159.65.38.104\"\n2018/02/23 19:25:39 [error] 4671#4671: *2 rewrite or internal redirection cycle while internally redirecting to \"/index.html\", client: 107.13.172.206, server: , request: \"GET /favicon.ico HTTP/1.1\", host: \"159.65.38.104\", referrer: \"http://159.65.38.104/\"\n</code></pre>\n"
+    },
+    {
+      "tags": [
+        "itrust2",
+        "milestone1",
+        "amazon-ec2",
+        "port8080"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 73,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/eecfe158fcfa7e91ae77b7525453143f?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Kanchan Bisht",
+        "link": "https://stackoverflow.com/c/ncsu/users/73/kanchan-bisht"
+      },
+      "is_answered": false,
+      "view_count": 59,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1519420857,
+      "creation_date": 1519420857,
+      "question_id": 142,
+      "link": "https://stackoverflow.com/c/ncsu/questions/142/problem-accessing-port-8080",
+      "title": "Problem accessing port 8080",
+      "body": "<p>I can access port 8080 and can see iTrust up and running in my local VM. My ansible script runs fine on ec2 instance but I'm unable to access port 8080. I have a rule added to the aws security group for accessing port 8080 from everywhere. Is there some other configuration that I'm missing? Or, what could be causing the problem?</p>\n"
+    },
+    {
+      "tags": [
+        "fuzzer"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Siddhant Shah"
+      },
+      "is_answered": false,
+      "view_count": 89,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1521248188,
+      "creation_date": 1521248188,
+      "question_id": 169,
+      "link": "https://stackoverflow.com/c/ncsu/questions/169/fuzzer-in-milestone-2",
+      "title": "Fuzzer in Milestone 2",
+      "body": "<p>My fuzzer code changes random strings and symbols which causes the build to fail. This is happening in random files. How do we filter the files ? Also, how do we know what files to ignore as random files are causing the build to fail.</p>\n"
+    },
+    {
+      "tags": [
+        "jenkins",
+        "jenkins-job-builder",
+        "jenkins-git-plugin"
+      ],
+      "owner": {
+        "reputation": 13,
+        "user_id": 13,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/246ba1562af4d02a1d837c495ff870f9?s=128&d=identicon&r=PG",
+        "display_name": "Khantil Choksi",
+        "link": "https://stackoverflow.com/c/ncsu/users/13/khantil-choksi"
+      },
+      "is_answered": false,
+      "view_count": 60,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1521417813,
+      "creation_date": 1521417813,
+      "question_id": 180,
+      "link": "https://stackoverflow.com/c/ncsu/questions/180/jenkins-git-plugin-git-checkout-to-particular-commit",
+      "title": "Jenkins Git Plugin: Git checkout to particular commit",
+      "body": "<p>I am notifying my jenkins job using Jenkins Git-Plugin and as mentioned here <a href=\"https://wiki.jenkins.io/display/JENKINS/Git+Plugin\" rel=\"nofollow noreferrer\">https://wiki.jenkins.io/display/JENKINS/Git+Plugin</a>; I am notifying my jenkins job using <code>curl http://yourserver/git/notifyCommit?url=&lt;URL of the Git repository&gt;[&amp;branches=branch1[,branch2]*][&amp;sha1=&lt;commit ID&gt;]</code>. So, inside my jenkins job builders; how shall I get this SHA1 commit ID? </p>\n"
+    },
+    {
+      "tags": [
+        "nodejs",
+        "istanbul"
+      ],
+      "owner": {
+        "reputation": 96,
+        "user_id": 5,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/e7d7041aa5a3c8705876dd666b25fc99?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Anshuman Goel",
+        "link": "https://stackoverflow.com/c/ncsu/users/5/anshuman-goel"
+      },
+      "is_answered": false,
+      "view_count": 75,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1521470439,
+      "creation_date": 1521470439,
+      "question_id": 184,
+      "link": "https://stackoverflow.com/c/ncsu/questions/184/istanbul-not-able-to-trace-callback-calls-in-code-coverage",
+      "title": "Istanbul not able to trace callback calls in code coverage",
+      "body": "<p>I have noticed that <code>Istanbul</code> is not able to track callbacks in its report. Is there a fix/ workaround for it ?</p>\n\n<p>The issue has been discussed over here too <a href=\"https://stackoverflow.com/questions/22417531/event-callbacks-code-coverage\">https://stackoverflow.com/questions/22417531/event-callbacks-code-coverage</a></p>\n"
+    },
+    {
+      "tags": [
+        "jenkins",
+        "mvn"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Karan Jadhav"
+      },
+      "is_answered": false,
+      "view_count": 64,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1521732359,
+      "creation_date": 1521732359,
+      "question_id": 188,
+      "link": "https://stackoverflow.com/c/ncsu/questions/188/time-for-one-build-and-test-iteration-for-itrust2",
+      "title": "Time for one Build and test iteration for iTrust2",
+      "body": "<p>I've recently noticed that one iteration of build+test for iTrust seems to take &lt;1.5 minutes some times and ~9 minutes at other times.\nOn both occasions, the build was successful and so were all the tests. The VM used was also the same, with the same memory configuration.\nI can't seem to figure out what the reason for this is. Does anyone have any ideas?</p>\n"
+    },
+    {
+      "tags": [
+        "itrust2"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Xindi Li"
+      },
+      "is_answered": false,
+      "view_count": 52,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1523738219,
+      "creation_date": 1523738219,
+      "question_id": 197,
+      "link": "https://stackoverflow.com/c/ncsu/questions/197/how-to-show-instances-are-operational-during-rolling-update-for-itrust2",
+      "title": "How to show instances are operational during rolling update for iTrust2",
+      "body": "<p>First I thought I could make a post request to login every several seconds to implement simple heartbeat. But it always returned </p>\n\n<pre><code>&lt;h1&gt;HTTP Status 403 - Invalid CSRF Token 'null' was found on the request parameter '_csrf' or header 'X-XSRF-TOKEN'.&lt;/h1&gt;\n        &lt;div class=\"line\"&gt;&lt;/div&gt;\n        &lt;p&gt;\n            &lt;b&gt;type&lt;/b&gt; Status report\n        &lt;/p&gt;\n        &lt;p&gt;\n            &lt;b&gt;message&lt;/b&gt;\n            &lt;u&gt;Invalid CSRF Token 'null' was found on the request parameter '_csrf' or header 'X-XSRF-TOKEN'.&lt;/u&gt;\n        &lt;/p&gt;\n        &lt;p&gt;\n            &lt;b&gt;description&lt;/b&gt;\n            &lt;u&gt;Access to the specified resource has been forbidden.&lt;/u&gt;\n        &lt;/p&gt;\n        &lt;hr class=\"line\"&gt;\n            &lt;h3&gt;Apache Tomcat/8.0.41&lt;/h3&gt; \n</code></pre>\n\n<p>I tried first made a get request to get a CSRF Token and then make a post request with it. But still, I got a 403. Is there any other way to do this?</p>\n"
+    },
+    {
+      "tags": [
+        "kubernetes"
+      ],
+      "owner": {
+        "reputation": 29,
+        "user_id": 7,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/c538d87998744e5f00e64b4712c68170?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Vijay Hebbar",
+        "link": "https://stackoverflow.com/c/ncsu/users/7/vijay-hebbar"
+      },
+      "is_answered": false,
+      "view_count": 63,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1523817322,
+      "creation_date": 1523817322,
+      "question_id": 201,
+      "link": "https://stackoverflow.com/c/ncsu/questions/201/exposing-services-outside-the-kubernetes-cluster",
+      "title": "Exposing services outside the Kubernetes cluster",
+      "body": "<p>We have been trying to expose the checkbox application running on the kubernetes cluster to the outside world so that it is accessible from the Master's IP address.</p>\n\n<p>Our attempts so far only allowed us to expose the nodes to the outside world but not the master. We tried setting the service type as LoadBalancer but the service is never assigned an External IP ( its status shows as Pending ) </p>\n\n<p>Is there any other configuration that needs to be made to achieve this?</p>\n\n<p>Thanks!</p>\n"
+    },
+    {
+      "tags": [
+        "checkbox",
+        "nginx"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Haoxu Ren"
+      },
+      "is_answered": false,
+      "view_count": 46,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1523846513,
+      "creation_date": 1523846513,
+      "question_id": 202,
+      "link": "https://stackoverflow.com/c/ncsu/questions/202/how-to-tell-difference-between-canary-node-and-stable-node",
+      "title": "how to tell difference between canary node and stable node",
+      "body": "<p>I'm working on canary releasing part, and I met a problem, how should I know this time access's response from canary node or the stable node, because two nodes both running checkbox.io and its response is the same.</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/bb595adc-9386-48eb-b89b-2c08345cd1db.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/bb595adc-9386-48eb-b89b-2c08345cd1db.png\" alt=\"enter image description here\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "mongodb",
+        "pymongo"
+      ],
+      "owner": {
+        "reputation": 101,
+        "user_id": 44,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/a86a619f55a5bb393bb2164d28f410cf?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Balasubramanian Ramesh Babu",
+        "link": "https://stackoverflow.com/c/ncsu/users/44/balasubramanian-ramesh-babu"
+      },
+      "is_answered": false,
+      "view_count": 47,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1523895137,
+      "creation_date": 1523895137,
+      "question_id": 204,
+      "link": "https://stackoverflow.com/c/ncsu/questions/204/pymongo-installation-error-503",
+      "title": "Pymongo installation error 503",
+      "body": "<p>Is anyone else facing issues when installing pymongo? I tried to install using <code>pip install pymongo</code> but it results in a http 503 error. Not sure what to do now</p>\n"
+    },
+    {
+      "tags": [
+        "checkbox.io",
+        "devops",
+        "request",
+        "api"
+      ],
+      "owner": {
+        "user_type": "does_not_exist",
+        "display_name": "Rishi Jain"
+      },
+      "is_answered": false,
+      "view_count": 154,
+      "answer_count": 0,
+      "score": 2,
+      "last_activity_date": 1534383474,
+      "creation_date": 1521263530,
+      "last_edit_date": 1534383474,
+      "question_id": 170,
+      "link": "https://stackoverflow.com/c/ncsu/questions/170/binding-error-checkbox-io",
+      "title": "Binding Error - Checkbox.io",
+      "body": "<p>We were trying to test the api route using the request module as follows:</p>\n\n<pre><code>request(app).get('/api/study/listing').expect('Content-Type', /json/).end(function(err,res, body){\nif(err) throw err;\nlet json = JSON.parse(body);\nconsole.log(res, json);\n});\n</code></pre>\n\n<p>I am getting the following error:</p>\n\n<pre><code>fs.js:642\nreturn binding.open(pathModule._makeLong(path), stringToFlags(flags), mode);\n             ^\n\nError: ENOENT: no such file or directory, open 'jade/singlechoice.jade'\nat Error (native)\nat Object.fs.openSync (fs.js:642:18)\nat Object.fs.readFileSync (fs.js:510:33)\nat loadJadeTemplates (/home/vagrant/data/checkbox/server-side/site/marqdown.js:36:37)\nat Object.&lt;anonymous&gt; (/home/vagrant/data/checkbox/server-side/site/marqdown.js:7:17)\nat Module._compile (module.js:577:32)\nat Object.Module._extensions..js (module.js:586:10)\nat Module.load (module.js:494:32)\nat tryModuleLoad (module.js:453:12)\nat Function.Module._load (module.js:445:3)\n</code></pre>\n\n<p>I have tried testing the same api route using postman. It responded with status code 200. Has anyone come across similar error? </p>\n"
+    },
+    {
+      "tags": [
+        "devops",
+        "kubernetes"
+      ],
+      "owner": {
+        "reputation": 31,
+        "user_id": 49,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/d35274db2979a01727f38fd379c622b4?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Navjot Singh",
+        "link": "https://stackoverflow.com/c/ncsu/users/49/navjot-singh"
+      },
+      "is_answered": false,
+      "view_count": 82,
+      "answer_count": 0,
+      "score": 2,
+      "last_activity_date": 1534383524,
+      "creation_date": 1523732283,
+      "last_edit_date": 1534383524,
+      "question_id": 196,
+      "link": "https://stackoverflow.com/c/ncsu/questions/196/what-tools-are-allowed-to-create-configure-kubernetes-cluster",
+      "title": "What tools are allowed to create/configure Kubernetes cluster?",
+      "body": "<p>Are we allowed the use of any of kubeadm/kops/kubespray while setting up Kubernetes cluster?</p>\n"
+    },
+    {
+      "tags": [
+        "itrust2",
+        "devops",
+        "jacoco-maven-plugin"
+      ],
+      "owner": {
+        "reputation": 40,
+        "user_id": 67,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-TW5A9UwLljg/AAAAAAAAAAI/AAAAAAAAAA4/dmtCSygp6Zc/photo.jpg?sz=128",
+        "display_name": "Uddhav Bhosle",
+        "link": "https://stackoverflow.com/c/ncsu/users/67/uddhav-bhosle"
+      },
+      "is_answered": false,
+      "view_count": 206,
+      "answer_count": 0,
+      "score": 3,
+      "last_activity_date": 1534383531,
+      "creation_date": 1520972902,
+      "last_edit_date": 1534383531,
+      "question_id": 159,
+      "link": "https://stackoverflow.com/c/ncsu/questions/159/jacoco-coverage-reports-not-generated-on-building-itrust",
+      "title": "Jacoco coverage reports not generated on building iTrust",
+      "body": "<p>I have tried running all possible build commands for iTrust, but the coverage-reports directory is not being generated.<br>\nThis directory is supposed to have the <code>jacoco-ut.exec</code> file.<br>\nWhat could be done to get the *.exec file for jacoco?</p>\n"
+    },
+    {
+      "tags": [
+        "ansible",
+        "devops",
+        "jenkins-2"
+      ],
+      "owner": {
+        "reputation": 84,
+        "user_id": 77,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/573ae9a38feb1f55268b42571da1a803?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Sarat Kavuru",
+        "link": "https://stackoverflow.com/c/ncsu/users/77/sarat-kavuru"
+      },
+      "is_answered": false,
+      "view_count": 105,
+      "answer_count": 0,
+      "score": 3,
+      "last_activity_date": 1534383552,
+      "creation_date": 1519178232,
+      "last_edit_date": 1534383552,
+      "question_id": 119,
+      "link": "https://stackoverflow.com/c/ncsu/questions/119/jenkins-cli-build-job",
+      "title": "Jenkins CLI Build job",
+      "body": "<pre><code>- name: Build the job\n  shell: \"java -jar /opt/jenkins-cli.jar -s http://{{ JenkinsDns }}:8080/ build checkbox --username admin --password {{ admin_password }}\"\n</code></pre>\n\n<p>I've been using the above task in ansible to start a build on Jenkins but this task always returns a \"ERROR: No such job 'checkbox'\". Even after ssh and running this same command with localhost gives the same error. Is anyone facing similar issues?</p>\n"
+    },
+    {
+      "tags": [
+        "baker"
+      ],
+      "owner": {
+        "reputation": 23,
+        "user_id": 122,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/565b9285acce86573dc3100a2ffe6460?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Jasmine Wang",
+        "link": "https://stackoverflow.com/c/ncsu/users/122/jasmine-wang"
+      },
+      "is_answered": false,
+      "view_count": 53,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1535308897,
+      "creation_date": 1535308897,
+      "question_id": 236,
+      "link": "https://stackoverflow.com/c/ncsu/questions/236/baker-run-serve-authentication-error",
+      "title": "baker run serve authentication error",
+      "body": "<p>I am trying to test that my Baker works. I am running on Windows and installed Baker by cloning into the Github and doing npm install/link.</p>\n\n<p><code>baker --version</code> and <code>baker bake</code> works correctly, but <code>baker run serve</code> will not work.</p>\n\n<p>I tried running <code>baker ssh</code>, which is probably what caused all of this, but the following happened:</p>\n\n<blockquote>\n  <p>vagrant@127.0.0.1's password:</p>\n  \n  <p>vagrant@127.0.0.1's password:</p>\n  \n  <p>vagrant@127.0.0.1's password:</p>\n  \n  <p>==> Error: Command failed: ssh -q -i \"C:\\Users\\Jasmine.baker\\baker_rsa\" -p \"6022\" -o StrictHostKeyChecking=no vagrant@127.0.0.1</p>\n</blockquote>\n\n<p>I'm not sure where they're getting the 127.0.0.1 from. Additionally, I don't know what password it could be asking for.</p>\n\n<p>When I tried running <code>baker run serve</code> immediately after, it output:</p>\n\n<blockquote>\n  <p>Running serve in baker-srv \ud83c\udf5e</p>\n  \n  <p>==> Error: All configured authentication methods failed</p>\n</blockquote>\n\n<p>I tried resetting and restarting the Virtual Machine, but it kept outputting the authentication error.</p>\n"
+    },
+    {
+      "tags": [
+        "mysql",
+        "setup"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 171,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-7fkcrOgW_kI/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaN2eKhdMJV-Cnvq6eUB3vCNWlEL4w/mo/photo.jpg?sz=128",
+        "display_name": "Yuan Zhang",
+        "link": "https://stackoverflow.com/c/ncsu/users/171/yuan-zhang"
+      },
+      "is_answered": false,
+      "view_count": 44,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1536073835,
+      "creation_date": 1536073835,
+      "question_id": 259,
+      "link": "https://stackoverflow.com/c/ncsu/questions/259/mysql-fail-to-connect-with-on-boarding-project",
+      "title": "MySql fail to connect with on-boarding project",
+      "body": "<p>I update my password in hibernate.cfg.xml but there is still no connection in mySQL work branch for some reason. I still could not update inventory/recipe at this point.</p>\n"
+    },
+    {
+      "tags": [
+        "coffeemaker"
+      ],
+      "owner": {
+        "reputation": 16,
+        "user_id": 90,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/7dd6d5a86a1ebf377a09d814cba9d82f?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Cameron Greene",
+        "link": "https://stackoverflow.com/c/ncsu/users/90/cameron-greene"
+      },
+      "is_answered": false,
+      "view_count": 26,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1536253880,
+      "creation_date": 1536253880,
+      "question_id": 290,
+      "link": "https://stackoverflow.com/c/ncsu/questions/290/argument-editrecipecontroller-is-not-a-function-got-undefined",
+      "title": "Argument &#39;EditRecipeController&#39; is not a function, got undefined",
+      "body": "<p>When I click on my Edit Recipe button to bring up the form to edit a recipe, the form comes up, but in the dev tools in chrome I get the error 'Argument 'EditRecipeController' is not a function, got undefined'.  I copied everything from the add recipe functionality over to the edit recipe files, so everything is identical between the two except that the new edit recipe files reference the files edit_recipe_controller.js instead of add_recipe_controller.js, etc.  It seems like it's not able to connect to the controller for some reason, but the stack trace in devtools is all angular stuff, and is completely unhelpful.</p>\n"
+    },
+    {
+      "tags": [
+        "coffeemaker"
+      ],
+      "owner": {
+        "reputation": 8,
+        "user_id": 104,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-v1Hf8R88Sz0/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaMgTyhwoiHVL-wNC_eUdyb60hz_CA/mo/photo.jpg?sz=128",
+        "display_name": "Isabelle Snyder",
+        "link": "https://stackoverflow.com/c/ncsu/users/104/isabelle-snyder"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1536259770,
+      "creation_date": 1536259770,
+      "question_id": 297,
+      "link": "https://stackoverflow.com/c/ncsu/questions/297/validation-issues-in-edit-recipe-form",
+      "title": "Validation issues in edit recipe form",
+      "body": "<p>When I select an existing recipe to edit, the form autofills with the values from the database as expected, but when I try to edit one of those values, the other textboxes in the form display errors:</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/4eabdc8d-28bd-4226-b7d3-600071ed4028.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/4eabdc8d-28bd-4226-b7d3-600071ed4028.png\" alt=\"before editing fields\"></a></p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/baf2206d-0324-4936-9ffb-3d608952c0b3.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/baf2206d-0324-4936-9ffb-3d608952c0b3.png\" alt=\"after editing field\"></a></p>\n\n<p>I am in lab 202 group 2, in case you need to look at my repo</p>\n"
+    },
+    {
+      "tags": [
+        "mysql",
+        "coffeemaker"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 133,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-_3nVboFLywc/AAAAAAAAAAI/AAAAAAAAACg/TiyfAyed-S4/photo.jpg?sz=128",
+        "display_name": "Alex Johnson",
+        "link": "https://stackoverflow.com/c/ncsu/users/133/alex-johnson"
+      },
+      "is_answered": false,
+      "view_count": 81,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1536274033,
+      "creation_date": 1536082305,
+      "last_edit_date": 1536274033,
+      "question_id": 264,
+      "link": "https://stackoverflow.com/c/ncsu/questions/264/exceptionininitializererror",
+      "title": "ExceptionInInitializerError",
+      "body": "<p>All tests are passing except APITest. We've confirmed that the correct password for root is in the hibernate.cfg.xml and there is a connection in MySQL Workbench. When checking the inventory page there are no stock numbers listed so we suspect its a database issue.</p>\n\n<p>This is the exception:\n<code>org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError\n</code></p>\n\n<p>We tried to add the <code>&amp;amp;serverTimezone=EST</code> but nothing changed.</p>\n\n<p>Here is a full stack trace of the error when running <code>baker run test</code>.</p>\n\n<pre><code>org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.ExceptionInInitializerError\nat com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)\nat com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)\nat com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)\nat com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:832)\nat com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)\nat com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)\nat com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:207)\nat org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)\nat org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)\nat org.hibernate.engine.jdbc.connections.internal.PooledConnections.addConnections(PooledConnections.java:106)\nat org.hibernate.engine.jdbc.connections.internal.PooledConnections.&lt;init&gt;(PooledConnections.java:40)\nat org.hibernate.engine.jdbc.connections.internal.PooledConnections.&lt;init&gt;(PooledConnections.java:19)\nat org.hibernate.engine.jdbc.connections.internal.PooledConnections$Builder.build(PooledConnections.java:138)\nat org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:110)\nat org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:74)\nat org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)\nat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)\nat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)\nat org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)\nat org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)\nat org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)\nat org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)\nat org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)\nat org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)\nat org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)\nat org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)\nat org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:418)\nat org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:87)\nat org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:692)\nat org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:727)\nat edu.ncsu.csc.coffee_maker.util.HibernateUtil.buildSessionFactory(HibernateUtil.java:18)\nat edu.ncsu.csc.coffee_maker.util.HibernateUtil.&lt;clinit&gt;(HibernateUtil.java:13)\nat edu.ncsu.csc.coffee_maker.models.persistent.DomainObject.getAll(DomainObject.java:60)\nat edu.ncsu.csc.coffee_maker.models.persistent.Inventory.getInventory(Inventory.java:369)\nat edu.ncsu.csc.coffee_maker.controllers.APIInventoryController.getInventory(APIInventoryController.java:37)\nat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\nat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\nat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\nat java.lang.reflect.Method.invoke(Method.java:498)\nat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\nat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)\nat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)\nat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)\nat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)\nat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)\nat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)\nat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)\nat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)\nat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)\nat javax.servlet.http.HttpServlet.service(HttpServlet.java:635)\nat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)\nat org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65)\nat javax.servlet.http.HttpServlet.service(HttpServlet.java:742)\nat org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167)\nat org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134)\nat org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155)\nat edu.ncsu.csc.coffee_maker.controllers.APITest.testApi(APITest.java:58)\n</code></pre>\n"
+    },
+    {
+      "tags": [
+        "code-coverage"
+      ],
+      "owner": {
+        "reputation": 16,
+        "user_id": 94,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/3518943356a6c9217a0077b410bb8960?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Justin Talarek",
+        "link": "https://stackoverflow.com/c/ncsu/users/94/justin-talarek"
+      },
+      "is_answered": false,
+      "view_count": 64,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1536334277,
+      "creation_date": 1536334277,
+      "question_id": 305,
+      "link": "https://stackoverflow.com/c/ncsu/questions/305/coverage-report",
+      "title": "Coverage Report",
+      "body": "<p>After running the tests that were made for us and looking at the coverage report the test did not cover any of the classes to more than 70% coverage?</p>\n\n<p>Do I need to write all of the test for all of the classes to get them up to 70%?</p>\n"
+    },
+    {
+      "tags": [
+        "api",
+        "successresponse",
+        "errorresponse"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 169,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-nel7PA7bHgU/AAAAAAAAAAI/AAAAAAAApuY/G5Mx-illZTk/photo.jpg?sz=128",
+        "display_name": "Jianlin Chen",
+        "link": "https://stackoverflow.com/c/ncsu/users/169/jianlin-chen"
+      },
+      "is_answered": false,
+      "view_count": 29,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1536341965,
+      "creation_date": 1536341965,
+      "question_id": 306,
+      "link": "https://stackoverflow.com/c/ncsu/questions/306/how-to-check-successresponse-and-errorresponse",
+      "title": "How to check successResponse and ErrorResponse",
+      "body": "<p>I wonder if there a way we could check ErrorResponse and successResponse\nFor example\nI'd like to check </p>\n\n<pre><code> ? new ResponseEntity( errorResponse( \"No recipe found with name \" + name ), HttpStatus.NOT_FOUND )\n            : new ResponseEntity( successResponse( recipe.getName() + \" recieved\" ), HttpStatus.OK );\n</code></pre>\n\n<p>In my test case. \nI looked through the document and tried</p>\n\n<pre><code>.andExpect( status().isNotFound().reason(\"No recipe found with name \" ) );\n</code></pre>\n\n<p>But that doesn't seem right</p>\n\n<p>Can somebody help me with it</p>\n\n<p>Thanks</p>\n"
+    },
+    {
+      "tags": [
+        "coffeemaker",
+        "selenium"
+      ],
+      "owner": {
+        "reputation": 25,
+        "user_id": 178,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-Pgl1E4TxI1A/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaP_QCC85dano9oHpTvNfx1-kbvFDg/mo/photo.jpg?sz=128",
+        "display_name": "Carl Klier",
+        "link": "https://stackoverflow.com/c/ncsu/users/178/carl-klier"
+      },
+      "is_answered": false,
+      "view_count": 59,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1536345970,
+      "creation_date": 1536345970,
+      "question_id": 307,
+      "link": "https://stackoverflow.com/c/ncsu/questions/307/selenium-testing-of-radio-buttons-and-edit-form",
+      "title": "Selenium Testing of Radio Buttons and Edit Form",
+      "body": "<p>I am trying to code my acceptance tests for the edit recipe function. The test is to add a recipe:\n        Name: Coffee\n        Price: 50\n        Coffee: 3\n        Milk: 1\n        Sugar: 1\n        Chocolate: 0\nand then go to the edit recipe page, click the Coffee radio button, and see that the correct values show up in the edit form. The code is working to add the coffee recipe and then switch pages to the edit recipe page.</p>\n\n<p>The radio button we have looks like this: </p>\n\n<p><code>&lt;input type=\"radio\" ng-model=\"$parent.name\" name=\"name\" value=\"Coffee\" required=\"true\" ng-change=\"pick(recipe)\" class=\"ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched\"&gt;</code></p>\n\n<p>I am trying to use code like this to click on the radio button and validate that the price is correct: </p>\n\n<pre><code>driver.findElement( By.cssSelector( \"input[value=\\\"Coffee\\\"]\" ) ).click();\n    // Make sure the the recipe is loaded into the list\n    assertTextPresent( \"50\", driver );\n</code></pre>\n\n<p>However, the test is not passing. I am confused as to what we are supposed to enter as the parameter for the By.cssSelector method.</p>\n\n<p>I have also tried driver.findElement( By.cssSelector( \"input[type=\\\"radio\\\"]\" ) ).click(); but they both give AssertionFailedError: Text not found!</p>\n\n<p>Any advice would be appreciated</p>\n"
+    },
+    {
+      "tags": [
+        "itrust2"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 185,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/a30c57923c9640cd1ac77eba7a98f499?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Daniel Mills",
+        "link": "https://stackoverflow.com/c/ncsu/users/185/daniel-mills"
+      },
+      "is_answered": false,
+      "view_count": 16,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1537475899,
+      "creation_date": 1537475899,
+      "question_id": 337,
+      "link": "https://stackoverflow.com/c/ncsu/questions/337/itrust2-junit-tests-hang-on-apitest-apiloinctest",
+      "title": "iTrust2 JUnit Tests Hang On &quot;apitest.APILOINCTest&quot;",
+      "body": "<p>I've just set up iTrust2 in Eclipse and the project seems to work and all tests that have run are passing. On test 503/545, \"testCodeAPI\" for \"edu.ncsu.csc.itrust2.apitest.APILOINCTest\", JUnit just hangs and doesn't continue executing tests. It doesn't stop either (the red square to terminate the JUnit test is still clickable). </p>\n\n<p>Has anyone else seen this already?</p>\n"
+    },
+    {
+      "tags": [
+        "mvvm",
+        "model-view-controller",
+        "design-patterns"
+      ],
+      "owner": {
+        "reputation": 21,
+        "user_id": 93,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/5dcc7543062ddd0221ce361b3c97febf?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Stanton Parham",
+        "link": "https://stackoverflow.com/c/ncsu/users/93/stanton-parham"
+      },
+      "is_answered": false,
+      "view_count": 76,
+      "answer_count": 0,
+      "score": 2,
+      "last_activity_date": 1538612834,
+      "creation_date": 1538581824,
+      "last_edit_date": 1538612834,
+      "question_id": 350,
+      "link": "https://stackoverflow.com/c/ncsu/questions/350/what-are-the-real-concrete-differences-between-mvvm-and-mvc",
+      "title": "What are the real concrete differences between MVVM and MVC?",
+      "body": "<p>The practice midterm in class today really brought an important issue to my attention: I have no idea what the difference between the MVVM and MVC patterns is.</p>\n\n<p>I read this StackOverflow question: <a href=\"https://stackoverflow.com/questions/667781/what-is-the-difference-between-mvc-and-mvvm\">https://stackoverflow.com/questions/667781/what-is-the-difference-between-mvc-and-mvvm</a>. But I think it just confused me more because the accepted answer explains that the choice between MVVM and MVC is not either/or since they usually show up within each other? And then it goes on to talk about the MVCVM pattern which is a combo of the two or something??</p>\n\n<p>Any help is appreciated!</p>\n"
+    },
+    {
+      "tags": [
+        "selenium"
+      ],
+      "owner": {
+        "reputation": 31,
+        "user_id": 161,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/-sY2dHUYUnmo/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaM_CxBbAdwSwuuysbvxA0LmTIwy6A/mo/photo.jpg?sz=128",
+        "display_name": "Sam Ebert",
+        "link": "https://stackoverflow.com/c/ncsu/users/161/sam-ebert"
+      },
+      "is_answered": false,
+      "view_count": 37,
+      "answer_count": 0,
+      "score": 2,
+      "last_activity_date": 1539808808,
+      "creation_date": 1539808808,
+      "question_id": 385,
+      "link": "https://stackoverflow.com/c/ncsu/questions/385/preexisting-selenium-tests-failing-in-jenkins",
+      "title": "Preexisting selenium tests failing in Jenkins",
+      "body": "<p>In the latest Jenkins build we're seeing some of the TA-written selenium tests failing. We haven't changed the code dealing with logins, so it seems strange for these to suddenly fail. I've included a screenshot of the failing test. Does anyone know how we could fix this?<a href=\"https://stackoverflow.com/c/ncsu/images/s/7a534028-5b7a-47e0-bc1c-618aabe4ab48.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/7a534028-5b7a-47e0-bc1c-618aabe4ab48.png\" alt=\"enter image description here\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "selenium"
+      ],
+      "owner": {
+        "reputation": 31,
+        "user_id": 161,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/-sY2dHUYUnmo/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaM_CxBbAdwSwuuysbvxA0LmTIwy6A/mo/photo.jpg?sz=128",
+        "display_name": "Sam Ebert",
+        "link": "https://stackoverflow.com/c/ncsu/users/161/sam-ebert"
+      },
+      "is_answered": false,
+      "view_count": 13,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1540102168,
+      "creation_date": 1540102168,
+      "question_id": 393,
+      "link": "https://stackoverflow.com/c/ncsu/questions/393/javascript-error-document-unloaded-while-waiting-for-result",
+      "title": "javascript error: document unloaded while waiting for result",
+      "body": "<p>I'm getting this error sporadically on my tests to add food entries. I've tried both implicit and explicit waits as discussed in the selenium tutorial, but neither of these seem to solve the problem. It doesn't do this every time, but it does most of the time. Does anyone have an idea of how to fix this or what type of wait to use?</p>\n"
+    },
+    {
+      "tags": [
+        "baker"
+      ],
+      "owner": {
+        "reputation": 23,
+        "user_id": 122,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/565b9285acce86573dc3100a2ffe6460?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Jasmine Wang",
+        "link": "https://stackoverflow.com/c/ncsu/users/122/jasmine-wang"
+      },
+      "is_answered": false,
+      "view_count": 70,
+      "answer_count": 0,
+      "score": 2,
+      "last_activity_date": 1540873990,
+      "creation_date": 1540873990,
+      "question_id": 398,
+      "link": "https://stackoverflow.com/c/ncsu/questions/398/ansible-executor-baker-errors",
+      "title": "Ansible/executor Baker errors",
+      "body": "<p>Whenever I try to run <code>baker bake</code> on the Ansible and Executor baker.yml files, I am continuously running into the same error for both. I am not sure where to start debugging.</p>\n\n<p>Here is the last part of each <code>baker bake</code> commands' outputs:</p>\n\n<pre><code>Using 192.168.14.1 in VirtualBox Host-Only Ethernet Adapter #2\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" hostonlyif ipconfig \"VirtualBox Host-Only Ethernet Adapter #2\" --ip 192.168.14.1\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" modifyvm ansible-srv --hostonlyadapter2 \"VirtualBox Host-Only Ethernet Adapter #2\"\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" modifyvm ansible-srv --nic2 hostonly\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" modifyvm ansible-srv --nictype2 virtio\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" modifyvm ansible-srv --natpf1 \"guestssh,tcp,,2003,,22\"\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" startvm ansible-srv --type emergencystop\nExecuting \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" startvm ansible-srv --type headless\nevents.js:167\n      throw er; // Unhandled 'error' event\n      ^\n\nError: read ECONNRESET\n    at TCP.onread (net.js:656:25)\nEmitted 'error' event at:\n    at Socket.&lt;anonymous&gt; (C:\\snapshot\\src\\node_modules\\ssh2\\lib\\client.js:300:10)\n    at Socket.emit (events.js:187:15)\n    at emitErrorNT (internal/streams/destroy.js:82:8)\n    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)\n    at process._tickCallback (internal/process/next_tick.js:63:19)\n</code></pre>\n\n<p>I am not sure where to start debugging. When I navigate to the Oracle VM VirtualBox Manager, it says that both baker-srv and ansible-srv are running. I have ran <code>baker destroy</code> (+ rerunning <code>baker bake</code>) multiple times.</p>\n\n<p>Any help is appreciated!</p>\n"
+    },
+    {
+      "tags": [
+        "tp"
+      ],
+      "owner": {
+        "reputation": 31,
+        "user_id": 161,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/-sY2dHUYUnmo/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaM_CxBbAdwSwuuysbvxA0LmTIwy6A/mo/photo.jpg?sz=128",
+        "display_name": "Sam Ebert",
+        "link": "https://stackoverflow.com/c/ncsu/users/161/sam-ebert"
+      },
+      "is_answered": false,
+      "view_count": 30,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1541391496,
+      "creation_date": 1541391496,
+      "question_id": 412,
+      "link": "https://stackoverflow.com/c/ncsu/questions/412/fixing-the-failing-sendemail-test-on-aws",
+      "title": "Fixing the failing sendEmail test on AWS",
+      "body": "<p>I see that the Jenkins setup page notes that the sendEmail test may fail due to the security settings of AWS. I am attempting to follow the listed procedure to fix this issue, but I am not sure which security group to edit to make this change. This screenshot shows the security groups that I am able to choose for my VM instance. Does anyone know which of these security groups should be changed?</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/208c4b30-30b6-49e2-923d-ea6280809883.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/208c4b30-30b6-49e2-923d-ea6280809883.png\" alt=\"enter image description here\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "pipeline"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 212,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-1st2X0zypP8/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcaHdLPVCZVMGIRvwbj_K-zEttBqKQ/mo/photo.jpg?sz=128",
+        "display_name": "Atmadeep Sen",
+        "link": "https://stackoverflow.com/c/ncsu/users/212/atmadeep-sen"
+      },
+      "is_answered": false,
+      "view_count": 37,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1547419241,
+      "creation_date": 1547419241,
+      "question_id": 447,
+      "link": "https://stackoverflow.com/c/ncsu/questions/447/cannot-run-firefox-as-root",
+      "title": "Cannot run Firefox as root",
+      "body": "<p>Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/atmadeep which is owned by atmadeep.)\nxdg-open: no method available for opening '<a href=\"https://google.com/\" rel=\"nofollow noreferrer\">https://google.com/</a>'</p>\n\n<p>The hook works as it opens and immediately closes and this is a ubuntu known issue. Tried it with latest firefox, chromium/google chrome. Did anyone get this? And how did you allow it to open the browser? </p>\n"
+    },
+    {
+      "tags": [
+        "pipeline"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 227,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/snoH3.png?s=128&g=1",
+        "display_name": "Abby Nuccio",
+        "link": "https://stackoverflow.com/c/ncsu/users/227/abby-nuccio"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1547605140,
+      "creation_date": 1547605140,
+      "question_id": 463,
+      "link": "https://stackoverflow.com/c/ncsu/questions/463/pipeline-workshop-failing-test",
+      "title": "Pipeline Workshop Failing Test",
+      "body": "<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/aeb75c5e-df34-4429-8bf4-ee6b2f63901d.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/aeb75c5e-df34-4429-8bf4-ee6b2f63901d.png\" alt=\"enter image description here\"></a></p>\n\n<p>I keep failing these tests on the Pipeline workshop. I am unsure what the problem is as I have tried restarting and taking various paths to discover the problem. I have my deploy directory at the same level as my Pipeline directory. Should it be within the Pipeline directory?</p>\n\n<p>This is also my remote git production path.\n<a href=\"https://stackoverflow.com/c/ncsu/images/s/58f26c43-aab2-4dc2-bb5e-2279c3992b58.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/58f26c43-aab2-4dc2-bb5e-2279c3992b58.png\" alt=\"enter image description here\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "project"
+      ],
+      "owner": {
+        "reputation": 28,
+        "user_id": 234,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/coXfs.jpg?s=128&g=1",
+        "display_name": "Hiral Singadia",
+        "link": "https://stackoverflow.com/c/ncsu/users/234/hiral-singadia"
+      },
+      "is_answered": false,
+      "view_count": 52,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1547685662,
+      "creation_date": 1547685662,
+      "question_id": 465,
+      "link": "https://stackoverflow.com/c/ncsu/questions/465/what-is-the-1st-milestone-of-the-project",
+      "title": "What is the 1st milestone of the project?",
+      "body": "<p>Had a question on the 1st milestone of the project-</p>\n\n<p>According to the README here <a href=\"https://github.com/CSC-DevOps/Course/blob/master/Project/README.md\" rel=\"nofollow noreferrer\">https://github.com/CSC-DevOps/Course/blob/master/Project/README.md</a> says that we need to work in a <strong>group of 3</strong></p>\n\n<p>and the milestone <a href=\"https://github.com/CSC-DevOps/Course/blob/master/Project/CM.md\" rel=\"nofollow noreferrer\">https://github.com/CSC-DevOps/Course/blob/master/Project/CM.md</a> here says that we need to work in <strong>group of 4</strong> for this and describes milestone 1 </p>\n\n<p>and there is <a href=\"https://github.com/CSC-DevOps/Course/blob/master/Project/M1.md\" rel=\"nofollow noreferrer\">https://github.com/CSC-DevOps/Course/blob/master/Project/M1.md</a> which is also description for milestone 1</p>\n\n<p>what exactly needs to be done in milestone 1?</p>\n\n<p>and what should be the group size?</p>\n"
+    },
+    {
+      "tags": [
+        "ansible",
+        "baker"
+      ],
+      "owner": {
+        "reputation": 47,
+        "user_id": 224,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/4d00d59405315ed59cbf859a8c377d95?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Jubeen Shah",
+        "link": "https://stackoverflow.com/c/ncsu/users/224/jubeen-shah"
+      },
+      "is_answered": false,
+      "view_count": 64,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1548640140,
+      "creation_date": 1548640140,
+      "question_id": 476,
+      "link": "https://stackoverflow.com/c/ncsu/questions/476/cannot-create-a-vm-with-baker",
+      "title": "Cannot create a VM with baker",
+      "body": "<p>I am getting the following error </p>\n\n<blockquote>\n  <p>TypeError: Cannot read property 'trim' of undefined</p>\n</blockquote>\n\n<pre><code>Creating vm. ansible-srv\n/snapshot/Baker/node_modules/node-virtualbox/lib/VBoxProvider.js:420\n                        let id = lineSplit[1].trim();\n                                              ^\n\nTypeError: Cannot read property 'trim' of undefined\n    at info.exec (/snapshot/Baker/node_modules/node-virtualbox/lib/VBoxProvider.js:420:47)\n    at ChildProcess.exithandler (child_process.js:282:7)\n    at ChildProcess.emit (events.js:182:13)\n    at maybeClose (internal/child_process.js:961:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:5)\n</code></pre>\n\n<p>I tried running <code>baker server reload</code> and then <code>baker bake</code> but it does not help. Any suggestions?</p>\n"
+    },
+    {
+      "tags": [
+        "opunit"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 259,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/R7a1I.jpg?s=128&g=1",
+        "display_name": "Bhavya Dwivedi",
+        "link": "https://stackoverflow.com/c/ncsu/users/259/bhavya-dwivedi"
+      },
+      "is_answered": false,
+      "view_count": 53,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1548819151,
+      "creation_date": 1548819151,
+      "question_id": 483,
+      "link": "https://stackoverflow.com/c/ncsu/questions/483/opunit-cm-workshop",
+      "title": "opunit CM workshop",
+      "body": "<p>I am getting the following response on running opunit test after configuring both web-srv and ansible-srv:</p>\n\n<p>opunit verify -i vagrant_inventory.yml</p>\n\n<p>===================================\nConnector: vagrant</p>\n\n<h1>Info: {\"name\":\"ansible-srv\",\"target\":\"servers/ansible-srv\",\"criteria_path\":\"test/ansible-srv.yml\"}</h1>\n\n<p>Isn't it supposed to print the web-srv info as well?</p>\n"
+    },
+    {
+      "tags": [
+        "maven"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 254,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/5CpEz.jpg?s=128&g=1",
+        "display_name": "Rui Shu",
+        "link": "https://stackoverflow.com/c/ncsu/users/254/rui-shu"
+      },
+      "is_answered": false,
+      "view_count": 60,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1550287039,
+      "creation_date": 1550287039,
+      "question_id": 526,
+      "link": "https://stackoverflow.com/c/ncsu/questions/526/fail-to-execute-goal-when-mvn-install-itrust",
+      "title": "fail to execute goal when mvn install iTrust",
+      "body": "<p>For the iTrust application, when we execute mvn install, we have the following issue reported. Has anyone encountered the same issue? Thanks.</p>\n\n<p>[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  6.453 s\n[INFO] Finished at: 2019-02-15T22:12:18-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.0:test (default-test) on project iTrust2: There are test failures.\n[ERROR] \n[ERROR] Please refer to /Users/rshu/Documents/DevOps/iTrust2-v4/target/surefire-reports for the individual test results.\n[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.\n[ERROR] The forked VM terminated without properly saying goodbye. VM crash or System.exit called?\n[ERROR] Command was /bin/sh -c cd /Users/rshu/Documents/DevOps/iTrust2-v4 &amp;&amp; /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/bin/java -javaagent:/Users/rshu/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/Users/rshu/Documents/DevOps/iTrust2-v4/target/coverage-reports/jacoco-ut.exec org.apache.maven.surefire.booter.ForkedBooter /Users/rshu/Documents/DevOps/iTrust2-v4/target/surefire 2019-02-15T22-12-17_874-jvmRun1 surefire3250618380513630947tmp surefire_017778285339506399940tmp\n[ERROR] Error occurred in starting fork, check output in log\n[ERROR] Process Exit Code: 134\n[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: The forked VM terminated without properly saying goodbye. VM crash or System.exit called?\n[ERROR] Command was /bin/sh -c cd /Users/rshu/Documents/DevOps/iTrust2-v4 &amp;&amp; /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/bin/java -javaagent:/Users/rshu/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/Users/rshu/Documents/DevOps/iTrust2-v4/target/coverage-reports/jacoco-ut.exec org.apache.maven.surefire.booter.ForkedBooter /Users/rshu/Documents/DevOps/iTrust2-v4/target/surefire 2019-02-15T22-12-17_874-jvmRun1 surefire3250618380513630947tmp surefire_017778285339506399940tmp\n[ERROR] Error occurred in starting fork, check output in log\n[ERROR] Process Exit Code: 134\n[ERROR]     at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:671)\n[ERROR]     at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:533)\n[ERROR]     at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:278)\n[ERROR]     at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:244)\n[ERROR]     at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1194)\n[ERROR]     at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1022)\n[ERROR]     at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:868)\n[ERROR]     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)\n[ERROR]     at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)\n[ERROR]     at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)\n[ERROR]     at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)\n[ERROR]     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)\n[ERROR]     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)\n[ERROR]     at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)\n[ERROR]     at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)\n[ERROR]     at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)\n[ERROR]     at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)\n[ERROR]     at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)\n[ERROR]     at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)\n[ERROR]     at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)\n[ERROR]     at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)\n[ERROR]     at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n[ERROR]     at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n[ERROR]     at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n[ERROR]     at java.base/java.lang.reflect.Method.invoke(Method.java:566)\n[ERROR]     at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)\n[ERROR]     at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)\n[ERROR]     at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)\n[ERROR]     at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] <a href=\"http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException\" rel=\"nofollow noreferrer\">http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException</a></p>\n"
+    },
+    {
+      "tags": [
+        "itrust2",
+        "maven"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 233,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/KBB43.jpg?s=128&g=1",
+        "display_name": "Madhu Vamsi Kalyan Machavarapu",
+        "link": "https://stackoverflow.com/c/ncsu/users/233/madhu-vamsi-kalyan-machavarapu"
+      },
+      "is_answered": false,
+      "view_count": 82,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1550712165,
+      "creation_date": 1550710440,
+      "question_id": 533,
+      "link": "https://stackoverflow.com/c/ncsu/questions/533/itrust-build-fails",
+      "title": "ITrust build fails",
+      "body": "<p>When I ran \"mvn clean test verify checkstyle:checkstyle\". I got this error message. I have even changed the email.properties file. But, when I try to build iTrust manually with the same procedure, it succeeds.<a href=\"https://stackoverflow.com/c/ncsu/images/s/502624db-3939-4f4c-93fd-4a5fc9591c59.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/502624db-3939-4f4c-93fd-4a5fc9591c59.png\" alt=\"EmailUtilsTest:testSendEmail  messaging cant convert socket to TLS\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "jenkins",
+        "checkstyle"
+      ],
+      "owner": {
+        "reputation": 48,
+        "user_id": 202,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/sQWeW.jpg?s=128&g=1",
+        "display_name": "Purva V",
+        "link": "https://stackoverflow.com/c/ncsu/users/202/purva-v"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1551991114,
+      "creation_date": 1551991114,
+      "question_id": 538,
+      "link": "https://stackoverflow.com/c/ncsu/questions/538/null-pointer-error-while-running-checkstyle",
+      "title": "Null Pointer error while running checkstyle",
+      "body": "<p>For the static analysis, we were planning to use checkstyle. We have added the checkstyle plugin and warnings next gen to Jenkins. The checkstyle config file is set properly. When the build runs and triggers this plugin we are getting following error :</p>\n\n<blockquote>\n  <p>[CheckStyle] [ERROR] Parsing of file '/var/lib/jenkins/workspace/iTrust/iTrust2/src/test/resources/reporting/csc_checkstyle.xml' failed due to an exception:\n  [CheckStyle] [ERROR] java.lang.NullPointerException\n  [CheckStyle] [ERROR]  [wrapped] java.net.MalformedURLException\n  [CheckStyle] [ERROR]     at java.net.URL.(URL.java:627)\n  [CheckStyle] [ERROR]     at java.net.URL.(URL.java:490)\n  [CheckStyle] [ERROR]     at java.net.URL.(URL.java:439)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:620)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startEntity(XMLEntityManager.java:1304)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startDTDEntity(XMLEntityManager.java:1270)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl.setInputSource(XMLDTDScannerImpl.java:264)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1161)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1045)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:959)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)\n  [CheckStyle] [ERROR]     at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)\n  [CheckStyle] [ERROR]     at org.apache.commons.digester3.Digester.parse(Digester.java:1642)\n  [CheckStyle] [ERROR]     at org.apache.commons.digester3.Digester.parse(Digester.java:1745)\n  [CheckStyle] [ERROR]     at edu.hm.hafner.analysis.parser.checkstyle.CheckStyleParser.parse(CheckStyleParser.java:47)\n  [CheckStyle] [ERROR]  [wrapped] edu.hm.hafner.analysis.ParsingException: Exception occurred during parsing:\n  null\n  [CheckStyle] [ERROR]     at edu.hm.hafner.analysis.parser.checkstyle.CheckStyleParser.parse(CheckStyleParser.java:55)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.model.FilesScanner.aggregateIssuesOfFile(FilesScanner.java:98)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.model.FilesScanner.scanFiles(FilesScanner.java:82)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.model.FilesScanner.invoke(FilesScanner.java:65)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.model.FilesScanner.invoke(FilesScanner.java:28)\n  [CheckStyle] [ERROR]     at hudson.FilePath.act(FilePath.java:1078)\n  [CheckStyle] [ERROR]     at hudson.FilePath.act(FilePath.java:1061)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.model.ReportScanningTool.scanInWorkspace(ReportScanningTool.java:126)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.model.ReportScanningTool.scan(ReportScanningTool.java:108)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.steps.IssuesScanner.scan(IssuesScanner.java:66)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.steps.IssuesRecorder.scanWithTool(IssuesRecorder.java:578)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.steps.IssuesRecorder.record(IssuesRecorder.java:546)\n  [CheckStyle] [ERROR]     at io.jenkins.plugins.analysis.core.steps.IssuesRecorder.perform(IssuesRecorder.java:514)\n  [CheckStyle] [ERROR]     at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)\n  [CheckStyle] [ERROR]     at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)\n  [CheckStyle] [ERROR]     at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)\n  [CheckStyle] [ERROR]     at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)\n  [CheckStyle] [ERROR]     at hudson.model.Build$BuildExecution.post2(Build.java:186)\n  [CheckStyle] [ERROR]     at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)\n  [CheckStyle] [ERROR]     at hudson.model.Run.execute(Run.java:1835)\n  [CheckStyle] [ERROR]     at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)\n  [CheckStyle] [ERROR]     at hudson.model.ResourceController.execute(ResourceController.java:97)\n  [CheckStyle] [ERROR]     at hudson.model.Executor.run(Executor.java:429)</p>\n</blockquote>\n\n<p>Does anyone have any idea why this may be caused?</p>\n"
+    },
+    {
+      "tags": [
+        "itrust2",
+        "test",
+        "junit"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 237,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/z2Nts.png?s=128&g=1",
+        "display_name": "Shyam Prasad",
+        "link": "https://stackoverflow.com/c/ncsu/users/237/shyam-prasad"
+      },
+      "is_answered": false,
+      "view_count": 27,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1552695972,
+      "creation_date": 1552695972,
+      "question_id": 542,
+      "link": "https://stackoverflow.com/c/ncsu/questions/542/publish-junit-test-result-report-error",
+      "title": "publish junit test result report error",
+      "body": "<p>I am trying to aggregate the test results xml from the itrust build using the JUnit plugin. Unable to set the correct path in 'Test Report XMLs'</p>\n\n<p>To be precise, our current workspace for the build is located in '/var/lib/jenkins/jobs/iTrustBuild/workspace', where as the itrust test results are generated in '/home/vagrant/iTrust/iTrust2/target/surefire-reports/'. My Jenkins JUint plugin is looking in the workspace mentioned above. In the advanced configurations options, I tried to give the absolute path to the itrust test results folder but it doesn't work. Attaching the image of error. Any one faced the similar issue?</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/7ec7bbee-6d99-4263-8f80-d2899843e352.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/7ec7bbee-6d99-4263-8f80-d2899843e352.png\" alt=\"enter image description here\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "ansible",
+        "amazon-ec2"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 238,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/Xh9Yf.png?s=128&g=1",
+        "display_name": "Arpita Shekhar",
+        "link": "https://stackoverflow.com/c/ncsu/users/238/arpita-shekhar"
+      },
+      "is_answered": false,
+      "view_count": 28,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1554603259,
+      "creation_date": 1554603259,
+      "question_id": 545,
+      "link": "https://stackoverflow.com/c/ncsu/questions/545/unable-to-connect-to-ec2-instance",
+      "title": "Unable to connect to EC2 instance",
+      "body": "<p>I am unable to run the playbook that is supposed to install Jenkins on EC2 instance. However, I am able to ssh into the instance and ping the machine using the same inventory file. The inventory file has correct entries for the .pem file.</p>\n\n<p>Not sure what is wrong. Any idea how to troubleshoot the issue?</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/7822d3b4-ce5b-4d9b-894a-aee23c310ecc.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/7822d3b4-ce5b-4d9b-894a-aee23c310ecc.png\" alt=\"Permission denied. Publickey\"></a></p>\n\n<p>Thanks!</p>\n"
+    },
+    {
+      "tags": [
+        "baker"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 378,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/72c938d31f0362d7ddf82c5b77eab439?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Jaydipkumar Arvindbhai Gabani",
+        "link": "https://stackoverflow.com/c/ncsu/users/378/jaydipkumar-arvindbhai-gabani"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1566942337,
+      "creation_date": 1566942337,
+      "question_id": 599,
+      "link": "https://stackoverflow.com/c/ncsu/questions/599/baker-bake-error",
+      "title": "Baker bake error",
+      "body": "<p>Baker got installed on windows without error but gives error while running baker bake command in cmd</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/c717d023-f12a-4e08-92b6-fd027063c59a.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/c717d023-f12a-4e08-92b6-fd027063c59a.png\" alt=\"The error is\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "git",
+        "repository"
+      ],
+      "owner": {
+        "reputation": 46,
+        "user_id": 280,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-GKd7wZ_AYa0/AAAAAAAAAAI/AAAAAAAAAJA/GXl5EqN44ds/photo.jpg?sz=128",
+        "display_name": "Abhilasha Lokannavar",
+        "link": "https://stackoverflow.com/c/ncsu/users/280/abhilasha-lokannavar"
+      },
+      "is_answered": false,
+      "view_count": 38,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1567031485,
+      "creation_date": 1567031485,
+      "question_id": 618,
+      "link": "https://stackoverflow.com/c/ncsu/questions/618/error-while-trying-to-connect-local-git-repository-to-another-remote-git-reposit",
+      "title": "Error while trying to connect local git repository to another remote git repository",
+      "body": "<p>As per <a href=\"https://github.com/chrisparnin/EngineeringBasics/blob/master/Git.md#git\" rel=\"nofollow noreferrer\">https://github.com/chrisparnin/EngineeringBasics/blob/master/Git.md#git</a>, I was practicing to create a Repo. I created a local git repository from command line and created a README.md within it.</p>\n\n<p>Now to connect the local repo with a remote one, I followed the instructions on GitHub to add a remote URL to an existing git repository:</p>\n\n<p><code>git remote add origin https://github.ncsu.edu/alokann/Project.git</code></p>\n\n<p><code>git push -u origin master</code></p>\n\n<p>But I got the following error:</p>\n\n<p><code>error: src refspec master does not match any.</code></p>\n\n<p><code>error: failed to push some refs to 'https://github.ncsu.edu/alokann/Project.git'</code></p>\n\n<p>Does anyone have an idea, what might be the issue?</p>\n"
+    },
+    {
+      "tags": [
+        "opunit",
+        "vboxmanage",
+        "windows-subsystem-for-linux"
+      ],
+      "owner": {
+        "reputation": 26,
+        "user_id": 382,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/1d7ad59477a591fce4c0f7dc150ea27d?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Rishal Shah",
+        "link": "https://stackoverflow.com/c/ncsu/users/382/rishal-shah"
+      },
+      "is_answered": false,
+      "view_count": 39,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1567211888,
+      "creation_date": 1567211888,
+      "question_id": 653,
+      "link": "https://stackoverflow.com/c/ncsu/questions/653/wsl-unable-to-find-virtualbox-vboxmanage-even-after-adding-path-in-windows",
+      "title": "WSL unable to find VirtualBox (VBoxManage) even after adding $PATH in Windows",
+      "body": "<p>I have installed VirtualBox in Windows and have added it in $PATH as shared in the screenshot below. </p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/47f69c6e-94ac-4a83-ba0e-acb9a7c1ed7c.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/47f69c6e-94ac-4a83-ba0e-acb9a7c1ed7c.png\" alt=\"VirtualBox added to $PATH\"></a></p>\n\n<p>Still the Windows Subsystem for Linux(WSL) is unable to find the VirtualBox and hence the opunit profile check fails.</p>\n\n<p>How can this be resolved?</p>\n"
+    },
+    {
+      "tags": [
+        "virtualbox",
+        "baker-framework"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 270,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-EJVjDjkQjmg/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rd9Z9r24xUzSC9qjhBxMrFCh3DddQ/photo.jpg?sz=128",
+        "display_name": "Surya Ahuja",
+        "link": "https://stackoverflow.com/c/ncsu/users/270/surya-ahuja"
+      },
+      "is_answered": false,
+      "view_count": 17,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1567617126,
+      "creation_date": 1567617126,
+      "question_id": 742,
+      "link": "https://stackoverflow.com/c/ncsu/questions/742/changing-the-default-host-networking-adapter-being-used-to-create-baker-example",
+      "title": "Changing the default host networking adapter being used to create baker-example VM",
+      "body": "<p>I am running the example for creating a new VM using baker, and while my baker-srv gets implemented, the baker-example VM fails to boot up. The reason for failure might be that the VM is being attached to an interface that doesn't exist, but I don't how/where to specify which network adapter to attach to.</p>\n\n<p>What I have tried\nI tried researching on the message which states that the virtualbox networking adapter wasn't found, and it's true that the adapter doesn't exist. The adapter that does exist is called ethernet adapter #3.</p>\n\n<p>I also tried changing the baker.yml file with the ip that reflects the subnet of the adapter because I thought baker would look at the adapter subnets to figure out what it should attach the VM to, but this doesn't solve the problem.</p>\n\n<p>Error\n==> Error: Command failed: \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" startvm baker-example --type headless VBoxManage.exe: error: Failed to open/create the internal network 'HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter' (VERR_INTNET_FLT_IF_NOT_FOUND).</p>\n"
+    },
+    {
+      "tags": [
+        "hw0"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 366,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-LIxtjpr18BU/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfDZ-43Z_PUqtPIx2cMjbDjlZk1DA/photo.jpg?sz=128",
+        "display_name": "Harsh Agrawal",
+        "link": "https://stackoverflow.com/c/ncsu/users/366/harsh-agrawal"
+      },
+      "is_answered": false,
+      "view_count": 40,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1567618897,
+      "creation_date": 1567618897,
+      "question_id": 747,
+      "link": "https://stackoverflow.com/c/ncsu/questions/747/hw0-requirement-question",
+      "title": "HW0 requirement question",
+      "body": "<p>I don't really have anything specific to ask so I am creating this private question.</p>\n\n<pre><code>def print_name(name):\n    print('My name is {}'.format(name))\n</code></pre>\n\n<p><em>italics</em></p>\n\n<p><strong>BOLD</strong></p>\n\n<blockquote>\n  <p>Testing out a quote</p>\n</blockquote>\n\n<pre><code>This is a code fence\n</code></pre>\n"
+    },
+    {
+      "tags": [
+        "git",
+        "api",
+        "rest"
+      ],
+      "owner": {
+        "reputation": 16,
+        "user_id": 361,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/MI2Qa.jpg?s=128&g=1",
+        "display_name": "Javan Rajpopat",
+        "link": "https://stackoverflow.com/c/ncsu/users/361/javan-rajpopat"
+      },
+      "is_answered": false,
+      "view_count": 20,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1567638628,
+      "creation_date": 1567638628,
+      "question_id": 759,
+      "link": "https://stackoverflow.com/c/ncsu/questions/759/error-in-listbranchesowner-repo",
+      "title": "Error in listBranches(owner,repo)",
+      "body": "<p>This question is regarding the REST API workshop that happened on 4th September. </p>\n\n<p>I managed to finish the 1st function listRepos() and am trying to work on the second listBranches(owner,repo).</p>\n\n<p>But I am receiving this response from the API, any idea how to solve it. </p>\n\n<pre><code>{\n  message: 'Must authenticate to access this API.',\n  documentation_url: 'https://developer.github.com/enterprise/2.18/v3'\n}\n</code></pre>\n\n<p>I authenticated myself via the two commands recommended on the given site, but still facing the same problem. Any solution? </p>\n"
+    },
+    {
+      "tags": [
+        "git"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 321,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9a976a056ea9d988cfd9bf0f664f91e8?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Pei Liu",
+        "link": "https://stackoverflow.com/c/ncsu/users/321/pei-liu"
+      },
+      "is_answered": false,
+      "view_count": 5,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1567803144,
+      "creation_date": 1567803144,
+      "question_id": 852,
+      "link": "https://stackoverflow.com/c/ncsu/questions/852/question-about-head",
+      "title": "Question about &quot;head&quot;",
+      "body": "<p>I have a question that does head refer to any one of the named heads in the repository?</p>\n"
+    },
+    {
+      "tags": [
+        "git-rm"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 288,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9b40600c86c375d752bde4a5d288485f?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Nita Radhakrishnan",
+        "link": "https://stackoverflow.com/c/ncsu/users/288/nita-radhakrishnan"
+      },
+      "is_answered": false,
+      "view_count": 9,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1567803761,
+      "creation_date": 1567803761,
+      "question_id": 853,
+      "link": "https://stackoverflow.com/c/ncsu/questions/853/removing-files-only-from-working-tree-in-git",
+      "title": "Removing files only from working tree in git",
+      "body": "<p>To remove files from both the index and the working tree in git we use the \"git rm\" command. Is there also a way to remove files only from the working tree while keeping those files in the index? </p>\n"
+    },
+    {
+      "tags": [
+        "hw1"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 386,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/-MGKlZ5rc0ZI/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3reqxE1iuceyJE4rfTRkE4FSPy9-Zg/photo.jpg?sz=128",
+        "display_name": "Venkata Nukala",
+        "link": "https://stackoverflow.com/c/ncsu/users/386/venkata-nukala"
+      },
+      "is_answered": false,
+      "view_count": 28,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1567809446,
+      "creation_date": 1567809446,
+      "question_id": 858,
+      "link": "https://stackoverflow.com/c/ncsu/questions/858/updating-the-repo-to-point-to-my-homework-repo",
+      "title": "Updating the repo to point to my homework repo",
+      "body": "<p>I tried to update my repo to point to the private repo HW1 with the following command:</p>\n\n<pre><code>$ git remote set-url origin https://github.ncsu.edu/vnukala2/HW1-510.git\n</code></pre>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/04fc7e56-653d-4e3f-92a3-ad60474929fa.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/04fc7e56-653d-4e3f-92a3-ad60474929fa.png\" alt=\"enter image description here\"></a></p>\n\n<p>How do I resolve this error? Why am I getting this?</p>\n"
+    },
+    {
+      "tags": [
+        "restapi"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 384,
+        "user_type": "registered",
+        "profile_image": "https://lh5.googleusercontent.com/-4EZ0urTarVA/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcfN-UzZqKvnQ4Pv3JNaIJZPEmIuA/photo.jpg?sz=128",
+        "display_name": "Isha Pandya",
+        "link": "https://stackoverflow.com/c/ncsu/users/384/isha-pandya"
+      },
+      "is_answered": false,
+      "view_count": 25,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1567816190,
+      "creation_date": 1567816190,
+      "question_id": 863,
+      "link": "https://stackoverflow.com/c/ncsu/questions/863/is-options-part-of-rest-api",
+      "title": "Is &quot;options &quot; part of REST API?",
+      "body": "<p>Like GET, PUT,POST id OPTIONS also a part of REST?</p>\n"
+    },
+    {
+      "tags": [
+        "hw1"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 269,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-fwz61eGCBK4/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdoEW1fY6JMJapqVhRoChXEjTBplg/photo.jpg?sz=128",
+        "display_name": "Saad Mohammad Abrar",
+        "link": "https://stackoverflow.com/c/ncsu/users/269/saad-mohammad-abrar"
+      },
+      "is_answered": false,
+      "view_count": 44,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1567843084,
+      "creation_date": 1567843084,
+      "question_id": 868,
+      "link": "https://stackoverflow.com/c/ncsu/questions/868/problems-with-the-mocha-testing-in-hw1",
+      "title": "Problems with the mocha testing in HW1",
+      "body": "<p>In the testing module for listing all the branches of a certain repo, the test fails as the authenticated user do not have a repository named \"<strong>EngineeringBasics</strong>\". So, do the authenticated user have to open a new repo named \"<strong>EngineeringBasics</strong>\" to pass the test?</p>\n\n<p><a href=\"https://stackoverflow.com/c/ncsu/images/s/af3a4e93-4f4c-46d5-8afb-aa5b9ab3a669.png\"><img src=\"https://stackoverflow.com/c/ncsu/images/s/af3a4e93-4f4c-46d5-8afb-aa5b9ab3a669.png\" alt=\"test.js\"></a></p>\n"
+    },
+    {
+      "tags": [
+        "hw1"
+      ],
+      "owner": {
+        "reputation": 15,
+        "user_id": 294,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/56933ab8afccc7829d19ed1251c5d9fe?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Pranjal Sharma",
+        "link": "https://stackoverflow.com/c/ncsu/users/294/pranjal-sharma"
+      },
+      "is_answered": false,
+      "view_count": 40,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1568059956,
+      "creation_date": 1568059956,
+      "question_id": 881,
+      "link": "https://stackoverflow.com/c/ncsu/questions/881/generic-rest-or-rest-over-http",
+      "title": "Generic &#39;REST&#39; or &#39;REST over HTTP&#39;?",
+      "body": "<blockquote>\n  <p>Explain some additional concerns related to using REST apis.</p>\n</blockquote>\n\n<p>For the purpose of this HW question, can we assume that we're talking about <strong>REST over HTTP</strong>?</p>\n"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9999
+}

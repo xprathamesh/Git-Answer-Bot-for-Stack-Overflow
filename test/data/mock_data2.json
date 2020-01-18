@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "tags": [
+        "git",
+        "repository"
+      ],
+      "owner": {
+        "reputation": 46,
+        "user_id": 280,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-GKd7wZ_AYa0/AAAAAAAAAAI/AAAAAAAAAJA/GXl5EqN44ds/photo.jpg?sz=128",
+        "display_name": "Abhilasha Lokannavar",
+        "link": "https://stackoverflow.com/c/ncsu/users/280/abhilasha-lokannavar"
+      },
+      "is_answered": false,
+      "view_count": 43,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1567031485,
+      "creation_date": 1567031485,
+      "question_id": 618,
+      "link": "https://stackoverflow.com/c/ncsu/questions/618/error-while-trying-to-connect-local-git-repository-to-another-remote-git-reposit",
+      "title": "Error while trying to connect local git repository to another remote git repository",
+      "body": "<p>As per <a href=\"https://github.com/chrisparnin/EngineeringBasics/blob/master/Git.md#git\" rel=\"nofollow noreferrer\">https://github.com/chrisparnin/EngineeringBasics/blob/master/Git.md#git</a>, I was practicing to create a Repo. I created a local git repository from command line and created a README.md within it.</p>\n\n<p>Now to connect the local repo with a remote one, I followed the instructions on GitHub to add a remote URL to an existing git repository:</p>\n\n<p><code>git remote add origin https://github.ncsu.edu/alokann/Project.git</code></p>\n\n<p><code>git push -u origin master</code></p>\n\n<p>But I got the following error:</p>\n\n<p><code>error: src refspec master does not match any.</code></p>\n\n<p><code>error: failed to push some refs to 'https://github.ncsu.edu/alokann/Project.git'</code></p>\n\n<p>Does anyone have an idea, what might be the issue?</p>\n"
+    },
+    {
+      "tags": [
+        "git",
+        "api",
+        "rest"
+      ],
+      "owner": {
+        "reputation": 16,
+        "user_id": 361,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/MI2Qa.jpg?s=128&g=1",
+        "display_name": "Javan Rajpopat",
+        "link": "https://stackoverflow.com/c/ncsu/users/361/javan-rajpopat"
+      },
+      "is_answered": false,
+      "view_count": 22,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1567638628,
+      "creation_date": 1567638628,
+      "question_id": 759,
+      "link": "https://stackoverflow.com/c/ncsu/questions/759/error-in-listbranchesowner-repo",
+      "title": "Error in listBranches(owner,repo)",
+      "body": "<p>This question is regarding the REST API workshop that happened on 4th September. </p>\n\n<p>I managed to finish the 1st function listRepos() and am trying to work on the second listBranches(owner,repo).</p>\n\n<p>But I am receiving this response from the API, any idea how to solve it. </p>\n\n<pre><code>{\n  message: 'Must authenticate to access this API.',\n  documentation_url: 'https://developer.github.com/enterprise/2.18/v3'\n}\n</code></pre>\n\n<p>I authenticated myself via the two commands recommended on the given site, but still facing the same problem. Any solution? </p>\n"
+    },
+    {
+      "tags": [
+        "git"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 321,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9a976a056ea9d988cfd9bf0f664f91e8?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Pei Liu",
+        "link": "https://stackoverflow.com/c/ncsu/users/321/pei-liu"
+      },
+      "is_answered": false,
+      "view_count": 25,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1571691321,
+      "creation_date": 1567803144,
+      "question_id": 852,
+      "link": "https://stackoverflow.com/c/ncsu/questions/852/question-about-head",
+      "title": "Question about &quot;head&quot;",
+      "body": "<p>I have a question that does head refer to any one of the named heads in the repository?</p>\n"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9999
+}

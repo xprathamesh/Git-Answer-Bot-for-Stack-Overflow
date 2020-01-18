@@ -1,0 +1,16 @@
+[
+  {
+  "down_vote_count": 2,
+  "up_vote_count": 3,
+  "is_accepted": true,
+  "score": 1,
+  "last_activity_date": 1571645021,
+  "last_edit_date": 1571670221,
+  "creation_date": 1571601821,
+  "answer_id": 5678,
+  "question_id": 1234,
+  "link": "https://stackoverflow.com/questions/16820852/abort-a-git-cherry-pick",
+  "title": "Abort a git cherry-pick?",
+  "body": "You can do the following  \n  ```git cherry-pick --abort```  \n  From the [git cherry-pick docs](http://jk.gs/git-cherry-pick.html)  \n  ```--abort - Cancels the operation and returns to the pre-sequence state.```  \n\n  For more information about this answer, check the following link: "
+ }
+]

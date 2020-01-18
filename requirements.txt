@@ -1,0 +1,12 @@
+requests
+pandas
+asyncio
+pyppeteer
+nltk
+sklearn
+typing
+websockets==6.0
+google-cloud
+google-cloud-bigquery
+ansible
+forever

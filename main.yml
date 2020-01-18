@@ -1,0 +1,97 @@
+- hosts: local
+
+  pre_tasks:
+    - name: Ensure latest bash version
+      apt:
+        name: bash
+        state: latest
+
+    - name: Ensure latest openssl version
+      become: yes
+      apt:
+        name: openssl
+        state: latest
+
+    - name: Ensure latest openssh-client version
+      become: yes
+      apt:
+        name: openssh-client
+        state: latest
+
+    - name: Ensure latest openssh-server version
+      become: yes
+      apt:
+        name: openssh-server
+        state: latest
+
+    - name: Install nodejs
+      become: yes
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install npm
+      become: yes
+      apt:
+        name: npm
+        state: present
+
+    - name: Install forever via npm
+      become: yes
+      npm:
+        name: forever
+        global: yes
+        state: present
+
+    - name: Ensure pip3 is installed
+      become: yes
+      apt:
+         name: python3-venv, python3-pip
+         state: latest
+
+  tasks:
+    - name: Install natural language toolkit
+      pip:
+        name: nltk
+        state: present
+        version: 3.4.5
+        executable: pip3
+
+    - name: Install pandas python module
+      pip:
+        name: pandas
+        state: present
+        version: 0.25.2
+        executable: pip3
+
+    - name: Install pyppeteer python module
+      pip:
+        name: pyppeteer
+        state: present
+        version: 0.0.25
+        executable: pip3
+
+    - name: Install requests python module
+      pip:
+        name: requests
+        state: present
+        version: 2.22.0
+        executable: pip3
+
+    - name: Install scikit-learn python module
+      pip:
+        name: sklearn
+        state: latest
+        executable: pip3
+
+    - name: Install websockets python module
+      pip:
+        name: websockets==6.0
+        state: forcereinstall
+        executable: pip3
+
+    - name: Install Google Cloud python module
+      pip:
+        name: google-cloud-bigquery
+        state: latest
+        executable: pip3
