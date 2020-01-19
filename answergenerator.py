@@ -17,9 +17,9 @@ def normalize(text):
 vectorizer = TfidfVectorizer(tokenizer=normalize, stop_words='english')
 
 async def containsExample(content):
-    content_string = content['ques']+' '+content['qdetails']
-    content_string = re.sub('<[^<]+?>', '', content_string)
-    res = re.sub('['+string.punctuation+']', '', content_string).split()
+    content_string  = content['ques']+' '+content['qdetails']
+    content_string  = re.sub('<[^<]+?>', '', content_string)
+    res             = re.sub('['+string.punctuation+']', '', content_string).split()
 
     ## Synonyms for Example - Needs testing
     # ex_synonyms = []
@@ -54,7 +54,7 @@ async def getExample(content):
                     '\n' + data['description'] + '\n' + data['example_heading'] + '\n\n'
                 for eg in data['example']:
                     posting_answer += eg['eg_title'] + '\n\n' + eg['eg_command'] + '\n' + eg['eg_description'] + '\n\n'
-                posting_answer+= 'For more information, visit: ' + data['link']
+                posting_answer += 'For more information, visit: ' + data['link']
                 break
 
         if(flag):
@@ -62,12 +62,12 @@ async def getExample(content):
 
     if (flag==False):
         for data in git_examples:
-            if content['qdetails'].find(data['command'])!=-1:
+            if content['qdetails'].lower().find(data['command'])!=-1:
                 posting_answer = data['title'] + \
                     '\n' + data['description'] + '\n' + data['example_heading'] + '\n\n'
                 for eg in data['example']:
                     posting_answer += eg['eg_title'] + '\n\n' + eg['eg_command'] + '\n' + eg['eg_description'] + '\n\n'
-                posting_answer+= 'For more information, visit: ' + data['link']
+                posting_answer += 'For more information, visit: ' + data['link']
                 break
 
     return posting_answer
@@ -110,10 +110,11 @@ async def getDBAnswer(content):
                     answer_contender=str(data['_id'])
                     print(max_sim)
                     print(answer_contender)
+                    if max_sim > 0.7:
+                        break
 
-    if answer_contenders == '':
+    if answer_contender == '':
         return ''
-
     else:
         # answer = Select * from `elated-nectar-258022.stackoverflow.git_answers where id = answer_contender.accepted_answer_id
         posting_answer = 'This question has probably been answered earlier on the main StackOverflow website. Kindly have a look here:\n\n'+'https://stackoverflow.com/questions/'+answer_contender

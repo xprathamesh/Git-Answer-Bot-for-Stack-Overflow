@@ -36,8 +36,8 @@ async def answer(page, content):
         posting_answer = "Hello "+ str(content['qposter']).split(' ')[0] + ',\n\n' + posting_answer
 
     await page.type('textarea[id=wmd-input]', posting_answer, {'delay': 20})
-    #print(posting_answer)
-    #await page.click('button[id=submit-button]')
+    # print(posting_answer)
+    await page.click('button[id=submit-button]')
     return page
 
 async def initiate_login(browser, url):
@@ -61,14 +61,14 @@ async def login(page):
 
 async def run(q):
     browser = await launch({"headless": False, "args": ["--no-sandbox", "--disable-web-security"]})
-    page = await initiate_login(browser, NCSU_SO_URL)
-    page = await login(page)
+    page    = await initiate_login(browser, NCSU_SO_URL)
+    page    = await login(page)
     for _q in q:
-        contentBuilder['id'] = _q[0]
-        contentBuilder['ques'] = _q[1]
-        contentBuilder['qdetails'] = _q[2]
-        contentBuilder['qposter'] = _q[3]
-        contentBuilder['tags'] = _q[4]
+        contentBuilder['id']        = _q[0]
+        contentBuilder['ques']      = _q[1]
+        contentBuilder['qdetails']  = _q[2]
+        contentBuilder['qposter']   = _q[3]
+        contentBuilder['tags']      = _q[4]
         await page.goto('https://stackoverflow.com/c/ncsu/questions/'+str(contentBuilder['id']), {'waitUntil': 'networkidle0'})
         page = await answer(page, contentBuilder)
         time.sleep(0.5)
