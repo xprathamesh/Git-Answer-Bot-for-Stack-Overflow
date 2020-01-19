@@ -1,4 +1,5 @@
-# ExampleBot
+# Git Bot for Stack Overflow
+### ExampleBot
 
 ### Project Milestone Documents
 - [Design Milestone Documentation](./docs/DESIGN.md)
